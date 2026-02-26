@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Lotus Foto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Lotus Foto Logo" class="logo-image">
+            </div>
+
+            <!-- Right Section -->
+            <div class="header-right-section">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <nav class="navigation" id="navigation">
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="photo-editing.html">Photo Editing</a></li>
+                                <li><a class="dropdown-item" href="day-to-dusk.html">Day to Dusk</a></li>
+                                <li><a class="dropdown-item" href="item-removal.html">Item Removal</a></li>
+                                <li><a class="dropdown-item" href="virtual-staging.html">Virtual Staging</a></li>
+                                <li><a class="dropdown-item" href="virtual-renovation.html">Virtual Renovation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#footer">Contact us</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Buy Now Button -->
+                <a href="order.html" class="buy-now-btn">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HOME CONTENT (keeps header/footer) -->
+    <div id="home-content" class="site-home">
+    <!-- Banner Section -->
+    <section class="banner">
+        <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="3"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="banner-slide" style="background-image: url('images/banner2.jpg');"></div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="banner-slide" style="background-image: url('images/banner3.jpg');"></div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="banner-slide" style="background-image: url('images/banner4.jpg');"></div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="banner-slide" style="background-image: url('images/banner5.jpg');"></div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Fixed Content -->
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+            <div class="banner-center">
+                <div class="banner-text">
+                    <h1 class="banner-headline">
+                        <span class="text-cream">Win more listings</span> 
+                        <span class="text-orange">and stand out in the real estate market</span> 
+                        <span class="text-cream">with</span>
+                    </h1>
+                    <h2 class="banner-company">
+                        <span class="text-orange">Lotusfoto</span> 
+                        <span class="text-white">image services</span>
+                    </h2>
+                </div>
+                
+                <div class="banner-cta">
+                    <button class="cta-button">GET STARTED TODAY</button>
+                </div>
+            </div>
+            
+            <div class="banner-bottom">
+                <div class="banner-services">
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Real Estate Photo Editing</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Virtual Twilight Conversion</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Item removal</span>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-check"></i>
+                        <span>Real Estate Video</span>
+                    </div>
+                </div>
+                
+                <div class="banner-image">
+                    <img src="images/banner.png" alt="Real Estate Photography" class="banner-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="what-we-do" class="services-section">
+        <div class="services-container">
+            <h2 class="services-title">THIS IS WHAT WE DO</h2>
+            
+            <div class="services-grid">
+                <!-- Photo Editing Service -->
+                <div class="service-card">
+                    <h3 class="service-card-title">PHOTO EDITING</h3>
+                    <p class="service-description">
+                        Basic editing (one exposure), Standard Editing (2-4 exposures merging), Advanced Editing (5+ exposures merging).
+                    </p>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/PHOTO EDITING/7X5A7819.jpg" alt="Before Photo Editing" class="before-image">
+                            <img src="images/PHOTO EDITING/7X5A7819_1.jpg" alt="After Photo Editing" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle">
+                                <div class="slider-arrow left">‹</div>
+                                <div class="slider-arrow right">›</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Day to Dusk Service -->
+                <div class="service-card">
+                    <h3 class="service-card-title">DAY TO DUSK</h3>
+                    <p class="service-description">
+                        Our photo retouching service will take your exterior property photo from drab to fab by replacing your sky with a beautiful dusk setting.
+                    </p>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/DAY TO DUSK/anh trk.jpg" alt="Before Day to Dusk" class="before-image">
+                            <img src="images/DAY TO DUSK/sau.jpg" alt="After Day to Dusk" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle">
+                                <div class="slider-arrow left">‹</div>
+                                <div class="slider-arrow right">›</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item Removal Service -->
+                <div class="service-card">
+                    <h3 class="service-card-title">ITEM REMOVAL</h3>
+                    <p class="service-description">
+                        Our photo editing experts can remove unwanted items from your photos.
+                    </p>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/ITEM REMOVAL/2.jpg" alt="Before Item Removal" class="before-image">
+                            <img src="images/ITEM REMOVAL/1.jpg" alt="After Item Removal" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle">
+                                <div class="slider-arrow left">‹</div>
+                                <div class="slider-arrow right">›</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Virtual Staging Service -->
+                <div class="service-card">
+                    <h3 class="service-card-title">VIRTUAL STAGING</h3>
+                    <p class="service-description">
+                        Our team can add furniture to real estate photography just how versatile the space is.
+                    </p>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/Sample Lotus Foto/Virtual Staging/1before.jpg" alt="Before Virtual Staging" class="before-image">
+                            <img src="images/Sample Lotus Foto/Virtual Staging/1after.jpg" alt="After Virtual Staging" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle">
+                                <div class="slider-arrow left">‹</div>
+                                <div class="slider-arrow right">›</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Virtual Renovations Service -->
+                <div class="service-card">
+                    <h3 class="service-card-title">VIRTUAL RENOVATIONS</h3>
+                    <p class="service-description">
+                        Visualize what a design will look like before undertaking expensive renovations.
+                    </p>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/1.jpg" alt="Before Virtual Renovation" class="before-image">
+                            <img src="images/2.jpg" alt="After Virtual Renovation" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle">
+                                <div class="slider-arrow left">‹</div>
+                                <div class="slider-arrow right">›</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <h2 class="video-title">VIDEO EDITING</h2>
+            <p class="video-description">Use Real Estate Video Editing cost-effectively as a marketing tool for the client to get a realistic feel of the property.</p>
+            
+            <div class="video-wrapper">
+                <!-- Option 1: YouTube Video -->
+                <iframe 
+                    src="https://www.youtube.com/embed/FfPlHTAt458" 
+                    title="Real Estate Video Editing"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                
+                <!-- Option 2: Local Video File (uncomment to use) -->
+                <!--
+                <video controls>
+                    <source src="videos/your-video.mp4" type="video/mp4">
+                    <source src="videos/your-video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="pricing-container">
+            <h2 class="pricing-title">14 Step Editing Process</h2>
+            
+            <div class="pricing-grid">
+                <!-- Basic Editing -->
+                <div class="pricing-card basic">
+                    <div class="pricing-header">
+                        <span class="pricing-photo">Photo</span>
+                        <h3 class="pricing-name">Basic Editing</h3>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>One exposure editing</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Brightness & Contrast Adjustment</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Color Correction</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Lens Distortion Correction</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Lens Spot Removal</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Photographer & Reflection Removal</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>TV & Fireplace Replacement</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Interior Window Replacements</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Exterior Sky Replacements</span>
+                        </div>
+                        <div class="feature-item excluded">
+                            <span class="cross">❌</span>
+                            <span>Manual Blending</span>
+                        </div>
+                        <div class="feature-item excluded">
+                            <span class="cross">❌</span>
+                            <span>Manual Flash Ambient Blending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Standard Editing -->
+                <div class="pricing-card standard">
+                    <div class="pricing-header">
+                        <span class="pricing-photo">Photo</span>
+                        <h3 class="pricing-name">Standard Editing</h3>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>3 exposures merging</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Brightness & Contrast Adjustment</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Color Correction</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Lens Distortion Correction</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Lens Spot Removal</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Photographer & Reflection Removal</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>TV & Fireplace Replacement</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Interior Window Replacements</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Exterior Sky Replacements</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Manual Blending</span>
+                        </div>
+                        <div class="feature-item excluded">
+                            <span class="cross">❌</span>
+                            <span>Manual Flash Ambient Blending</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Editing -->
+                <div class="pricing-card advanced">
+                    <div class="pricing-header">
+                        <span class="pricing-photo">Photo</span>
+                        <h3 class="pricing-name">Advanced Editing</h3>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>4+ exposures merging</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Brightness & Contrast Adjustment</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Color Correction</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Lens Distortion Correction</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Lens Spot Removal</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Photographer & Reflection Removal</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>TV & Fireplace Replacement</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Interior Window Replacements</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Exterior Sky Replacements</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Manual Blending</span>
+                        </div>
+                        <div class="feature-item included">
+                            <span class="checkmark">✔</span>
+                            <span>Manual Flash Ambient Blending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- PHOTO EDITING PAGE (renders when hash=#photo-editing) -->
+    <div id="photo-editing-page" class="site-page page-hidden">
+        <!-- Top image slider -->
+        <section class="pe-top-slider">
+            <div class="pe-container">
+                <div class="pe-skeleton" id="peTopSkeleton"></div>
+                <div class="pe-multi-slider is-hidden" data-visible="3" data-autoplay="true" data-interval="3500">
+                    <button class="pe-nav pe-prev" aria-label="Previous"></button>
+                    <div class="pe-viewport">
+                        <div class="pe-track">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" loading="lazy" alt="slide 1">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg" loading="lazy" alt="slide 2">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg" loading="lazy" alt="slide 3">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05935.jpg" loading="lazy" alt="slide 4">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05970.jpg" loading="lazy" alt="slide 5">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC06031.jpg" loading="lazy" alt="slide 6">
+                        </div>
+                    </div>
+                    <button class="pe-nav pe-next" aria-label="Next"></button>
+                </div>
+            </div>
+        </section>
+        <section class="pe-hero">
+            <div class="pe-container">
+                <h1 class="pe-title">Real Estate Photo Editing Services</h1>
+                <p class="pe-lead">With over <strong>08 years of experience</strong> in real estate photo editing services, Egecko Team has served hundreds of satisfied customers worldwide. Our editing process is standardized with 14 steps, you can see it below.</p>
+                <p class="pe-text">Especially, we have a person to <strong>control the quality of the product</strong> before sending it back to the customer, he is Lucas. After the editor completes the job, Lucas will check again to make sure the work is of the highest quality, and the customer's requirements have been completed.</p>
+                <p class="pe-text"><strong>We are committed to high and consistency quality</strong> before sending photos back to the customer.</p>
+                <div class="pe-cta"><a href="#contact" class="cta-button">Free Trial Test</a></div>
+            </div>
+        </section>
+
+        <section class="pe-process">
+            <div class="pe-container">
+                <h2 class="pe-section-title">Photo Editing Process</h2>
+                <div class="pe-card">
+                    <ul>
+                        <li>Exposures merging/ Blending</li>
+                        <li>Correct Color</li>
+                        <li>Correct Lens Distortion</li>
+                        <li>Adjust Brightness & Contrast</li>
+                        <li>Remove Lens Spot</li>
+                        <li>Remove Camera & Reflection</li>
+                        <li>Manual Blending + Manual Flash Ambient Blending</li>
+                        <li>Add TV Screen & Fire to Fireplace</li>
+                        <li>Interior Window Replacements</li>
+                        <li>Sky Replacements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pe-showcase">
+            <div class="pe-container">
+                <h2 class="pe-section-title alt">Check Out What We Do</h2>
+                <div class="pe-grid">
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/Sample Lotus Foto/Virtual Staging/1before.jpg" alt="Before" class="before-image">
+                            <img src="images/Sample Lotus Foto/Virtual Staging/1after.jpg" alt="After" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
+                        </div>
+                    </div>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/PHOTO EDITING/7X5A7819_1.jpg" alt="Before" class="before-image">
+                            <img src="images/PHOTO EDITING/7X5A7819.jpg" alt="After" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
+                        </div>
+                    </div>
+                    <div class="before-after-container">
+                        <div class="before-after-image">
+                            <img src="images/DAY TO DUSK/anh trk.jpg" alt="Before" class="before-image">
+                            <img src="images/DAY TO DUSK/sau.jpg" alt="After" class="after-image">
+                            <div class="slider-line"></div>
+                            <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pe-prices">
+            <div class="pe-container">
+                <h2 class="pe-section-title">Real Estate Photo Editing Prices</h2>
+                <div class="pricing-grid">
+                    <!-- Reuse existing pricing cards -->
+                    <div class="pricing-card basic">
+                        <div class="pricing-header">
+                            <span class="pricing-photo">Photo</span>
+                            <h3 class="pricing-name">Basic Editing</h3>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>01 exposure editing</span></div>
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>14 Steps Editing Process</span></div>
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>Turnaround: 12–15 hours</span></div>
+                        </div>
+                    </div>
+                    <div class="pricing-card standard">
+                        <div class="pricing-header">
+                            <span class="pricing-photo">Photo</span>
+                            <h3 class="pricing-name">Standard Editing</h3>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>02 – 03 exposures editing</span></div>
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>14 Steps Editing Process</span></div>
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>Turnaround: 12–15 hours</span></div>
+                        </div>
+                    </div>
+                    <div class="pricing-card advanced">
+                        <div class="pricing-header">
+                            <span class="pricing-photo">Photo</span>
+                            <h3 class="pricing-name">Advanced Editing</h3>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>04+ exposures editing</span></div>
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>14 Steps Editing Process</span></div>
+                            <div class="feature-item included"><span class="checkmark">✔</span><span>Turnaround: 12–15 hours</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pe-cta"><a href="order.html" class="cta-button">Create Order</a></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Useful Links -->
+                <div class="footer-column footer-links">
+                    <h3 class="footer-title">USEFUL LINKS</h3>
+                    <ul class="footer-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-column footer-services">
+                    <h3 class="footer-title">SERVICES</h3>
+                    <ul class="footer-list with-icons">
+                        <li><i class="fas fa-check"></i><span>Photo editing</span></li>
+                        <li><i class="fas fa-check"></i><span>Day to Dusk</span></li>
+                        <li><i class="fas fa-check"></i><span>Item Removal</span></li>
+                        <li><i class="fas fa-check"></i><span>Virtual Staging & Renovations</span></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+                    <h3 class="footer-title">CONTACT</h3>
+                    <ul class="footer-list with-icons">
+                        <li><i class="fas fa-building"></i><span>Lotus Foto - Real Estate Photo Editing</span></li>
+                        <li><i class="fas fa-location-dot"></i><span>Chúc sơn - Chương Mỹ - Hà Nội, Vietnam</span></li>
+                        <li><i class="fas fa-envelope"></i><span>lotus.foto.sale@gmail.com</span></li>
+                        <li><i class="fas fa-envelope"></i><span>contact.lotusfoto@gmail.com</span></li>
+                    </ul>
+                </div>
+
+                <!-- Social + Newsletter -->
+                <div class="footer-column footer-social">
+                    <h3 class="footer-title">SOCIAL</h3>
+                    <div class="social-media-section">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61579599152434&locale=vi_VN" target="_blank" aria-label="Facebook" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/lotus_foto_editing/" target="_blank" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

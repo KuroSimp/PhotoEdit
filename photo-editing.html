@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Photo Editing - Lotus Foto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Header (copied structure from index) -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Lotus Foto Logo" class="logo-image" decoding="async">
+            </div>
+            <div class="header-right-section">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <nav class="navigation" id="navigation">
+                    <ul class="nav-menu">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="photo-editing.html">Photo Editing</a></li>
+                                <li><a class="dropdown-item" href="day-to-dusk.html">Day to Dusk</a></li>
+                                <li><a class="dropdown-item" href="item-removal.html">Item Removal</a></li>
+                                <li><a class="dropdown-item" href="virtual-staging.html">Virtual Staging</a></li>
+                                <li><a class="dropdown-item" href="virtual-renovation.html">Virtual Renovation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#footer">Contact us</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Buy Now Button -->
+                <a href="order.html" class="buy-now-btn">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Photo Editing PAGE CONTENT -->
+    <div id="photo-editing-page" class="site-page">
+        <section class="pe-top-slider">
+            <div class="pe-container">
+                <div class="pe-skeleton" id="peTopSkeleton"></div>
+                <div class="pe-multi-slider is-hidden" data-visible="3" data-autoplay="true" data-interval="3500">
+                    <button class="pe-nav pe-prev" aria-label="Previous"></button>
+                    <div class="pe-viewport">
+                        <div class="pe-track">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" loading="lazy" alt="slide 1">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg" loading="lazy" alt="slide 2">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg" loading="lazy" alt="slide 3">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05935.jpg" loading="lazy" alt="slide 4">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05970.jpg" loading="lazy" alt="slide 5">
+                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC06031.jpg" loading="lazy" alt="slide 6">
+                        </div>
+                    </div>
+                    <button class="pe-nav pe-next" aria-label="Next"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="pe-hero">
+            <div class="pe-container">
+                <h1 class="pe-title">Real Estate Photo Editing Services</h1>
+                <p class="pe-lead">With over <strong>08 years of experience</strong> in real estate photo editing services, Lotus Foto Team has served hundreds of satisfied customers worldwide. Our editing process is standardized with 14 steps, you can see it below.</p>
+                <p class="pe-text">Especially, we have a person to <strong>control the quality of the product</strong> before sending it back to the customer, he is Lucas. After the editor completes the job, Lucas will check again to make sure the work is of the highest quality, and the customer's requirements have been completed.</p>
+                <p class="pe-text"><strong>We are committed to high and consistency quality</strong> before sending photos back to the customer.</p>
+                <div class="pe-cta"><a href="index.html#contact" class="cta-button">Free Trial Test</a></div>
+            </div>
+        </section>
+
+        <section class="pe-process">
+            <div class="pe-container">
+                <h2 class="pe-section-title alt">Photo Editing Process</h2>
+                <div class="pe-card">
+                    <ul>
+                        <li>Exposures merging/ Blending</li>
+                        <li>Correct Color</li>
+                        <li>Correct Lens Distortion</li>
+                        <li>Adjust Brightness & Contrast</li>
+                        <li>Remove Lens Spot</li>
+                        <li>Remove Camera & Reflection</li>
+                        <li>Manual Blending + Manual Flash Ambient Blending</li>
+                        <li>Add TV Screen & Fire to Fireplace</li>
+                        <li>Interior Window Replacements</li>
+                        <li>Sky Replacements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pe-showcase">
+            <div class="pe-container">
+                <h2 class="pe-section-title alt">Check Out What We Do</h2>
+                <div class="pe-grid">
+                    <div>
+                        <div class="showcase-label">Basic</div>
+                        <div class="before-after-container">
+                            <div class="before-after-image">
+                                <img src="images/Checkout/basic1.jpg" alt="Before" class="before-image" loading="eager" decoding="async" fetchpriority="high">
+                                <img src="images/Checkout/basic2.jpg" alt="After" class="after-image" loading="eager" decoding="async" fetchpriority="high">
+                                <div class="slider-line"></div>
+                                <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="showcase-label">Standard</div>
+                        <div class="before-after-container">
+                            <div class="before-after-image">
+                                <img src="images/Checkout/stan1.jpg" alt="Before" class="before-image" loading="eager" decoding="async">
+                                <img src="images/Checkout/stan2.jpg" alt="After" class="after-image" loading="eager" decoding="async">
+                                <div class="slider-line"></div>
+                                <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="showcase-label">Advanced</div>
+                        <div class="before-after-container">
+                            <div class="before-after-image">
+                                <img src="images/Checkout/adven1.jpg" alt="Before" class="before-image" loading="eager" decoding="async">
+                                <img src="images/Checkout/adven2.jpg" alt="After" class="after-image" loading="eager" decoding="async">
+                                <div class="slider-line"></div>
+                                <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How Does It Work - steps -->
+        <section class="pe-how">
+            <div class="pe-container">
+                <h2 class="pe-section-title alt">How Does It Work</h2>
+                <div class="pe-steps">
+                    <div class="pe-step">
+                        <div class="pe-step-icon"><img class="pe-step-img" src="images/how does it work/1.png" alt="Upload real estate photos" loading="lazy" decoding="async"></div>
+                        <div class="pe-step-title">Upload real estate photos</div>
+                    </div>
+                    <div class="pe-step">
+                        <div class="pe-step-icon"><img class="pe-step-img" src="images/how does it work/2.png" alt="Write recommendations" loading="lazy" decoding="async"></div>
+                        <div class="pe-step-title">Write recommendations</div>
+                    </div>
+                    <div class="pe-step">
+                        <div class="pe-step-icon"><img class="pe-step-img" src="images/how does it work/3.webp" alt="Submit for revision if necessary" loading="lazy" decoding="async"></div>
+                        <div class="pe-step-title">Submit for revision if necessary</div>
+                    </div>
+                    <div class="pe-step">
+                        <div class="pe-step-icon"><img class="pe-step-img" src="images/how does it work/4.png" alt="Get your photos back" loading="lazy" decoding="async"></div>
+                        <div class="pe-step-title">Get your photos back</div>
+                    </div>
+                </div>
+                <div class="pe-how-text">
+                    <p>Having received thousands of requests from realtors and photographers, we launched our own new real estate photo editing services. Either expert or beginning photographers can use it.</p>
+                    <p>We will take care of your property photos in a fast 12–15 hours turnaround time and efficient way. Our services are a straight way to professional property photography.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pe-prices">
+            <div class="pe-container">
+                <h2 class="pe-section-title alt">Real Estate Photo Editing Prices</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card basic">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Photo Basic Editing</h3>
+                            <div style="font-size:28px; margin-top:10px;">$ 0.60</div>
+                            <div style="color:#444;">per photo</div>
+                            <div class="pricing-thumbs">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" alt="Basic editing sample 1" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05854.jpg" alt="Basic editing sample 2" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05860.jpg" alt="Basic editing sample 3" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05914.jpg" alt="Basic editing sample 4" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item included"><span>01 exposure editing</span></div>
+                            <div class="feature-item included"><span>14 Steps Editing Process</span></div>
+                            <div class="feature-item included"><span>Turnaround: 12–15 hours</span></div>
+                        </div>
+                    </div>
+                    <div class="pricing-card standard">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Photo Standard Editing</h3>
+                            <div style="font-size:28px; margin-top:10px;">$ 0.80</div>
+                            <div style="color:#444;">per photo</div>
+                            <div class="pricing-thumbs">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05872.jpg" alt="Standard editing sample 1" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05875.jpg" alt="Standard editing sample 2" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05884.jpg" alt="Standard editing sample 3" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05887.jpg" alt="Standard editing sample 4" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item included"><span>02 – 03 exposures editing</span></div>
+                            <div class="feature-item included"><span>14 Steps Editing Process</span></div>
+                            <div class="feature-item included"><span>Turnaround: 12–15 hours</span></div>
+                        </div>
+                    </div>
+                    <div class="pricing-card advanced">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Photo Advanced Editing</h3>
+                            <div style="font-size:28px; margin-top:10px;">$ 0.90</div>
+                            <div style="color:#444;">per photo</div>
+                            <div class="pricing-thumbs">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05890.jpg" alt="Advanced editing sample 1" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg" alt="Advanced editing sample 2" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05901.jpg" alt="Advanced editing sample 3" loading="lazy" decoding="async">
+                                <img src="images/Sample Lotus Foto/HDR Blending/2/DSC06079.jpg" alt="Advanced editing sample 4" loading="lazy" decoding="async">
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature-item included"><span>04+ exposures editing</span></div>
+                            <div class="feature-item included"><span>14 Steps Editing Process</span></div>
+                            <div class="feature-item included"><span>Turnaround: 12–15 hours</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pe-cta"><a href="order.html" class="cta-button">Create Order</a></div>
+            </div>
+        </section>
+
+        <!-- What We Done Gallery Section -->
+        <section class="pe-gallery">
+            <div class="pe-container">
+                <h2 class="pe-section-title">What We Done</h2>
+
+
+                <!-- Main Gallery Image -->
+                <div class="gallery-main">
+                    <div class="gallery-main-image">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" alt="Gallery main image" id="mainGalleryImage" loading="eager" fetchpriority="high" decoding="async" width="1600" height="500">
+                        <button class="gallery-nav-btn prev-btn" id="prevMainBtn">‹</button>
+                        <button class="gallery-nav-btn next-btn" id="nextMainBtn">›</button>
+                    </div>
+                </div>
+
+                <!-- Thumbnail Gallery -->
+                <div class="gallery-thumbnails">
+                    <div class="thumbnails-container" id="thumbnailsContainer">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" alt="Thumbnail 1" class="thumbnail active" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05854.jpg" alt="Thumbnail 2" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05854.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05860.jpg" alt="Thumbnail 3" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05860.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05866.jpg" alt="Thumbnail 4" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05866.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05872.jpg" alt="Thumbnail 5" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05872.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05875.jpg" alt="Thumbnail 6" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05875.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05884.jpg" alt="Thumbnail 7" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05884.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05887.jpg" alt="Thumbnail 8" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05887.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05890.jpg" alt="Thumbnail 9" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05890.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg" alt="Thumbnail 10" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05901.jpg" alt="Thumbnail 11" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05901.jpg" loading="lazy" decoding="async">
+                        <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg" alt="Thumbnail 12" class="thumbnail" data-main="images/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg" loading="lazy" decoding="async">
+                    </div>
+                    <button class="thumbnails-nav-btn next-thumb" id="nextThumbBtn">›</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer (reuse same markup from index) -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column footer-links">
+                    <h3 class="footer-title">USEFUL LINKS</h3>
+                    <ul class="footer-list">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-services">
+                    <h3 class="footer-title">SERVICES</h3>
+                    <ul class="footer-list with-icons">
+                        <li><i class="fas fa-check"></i><span>Photo editing</span></li>
+                        <li><i class="fas fa-check"></i><span>Day to Dusk</span></li>
+                        <li><i class="fas fa-check"></i><span>Item Removal</span></li>
+                        <li><i class="fas fa-check"></i><span>Virtual Staging & Renovations</span></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3 class="footer-title">CONTACT</h3>
+                    <ul class="footer-list with-icons">
+                        <li><i class="fas fa-building"></i><span>Lotus Foto - Real Estate Photo Editing</span></li>
+                        <li><i class="fas fa-location-dot"></i><span>Chúc sơn - Chương Mỹ - Hà Nội, Vietnam</span></li>
+                        <li><i class="fas fa-envelope"></i><span>lotus.foto.sale@gmail.com</span></li>
+                        <li><i class="fas fa-envelope"></i><span>contact.lotusfoto@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-title">SOCIAL</h3>
+                    <div class="social-media-section">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61579599152434&locale=vi_VN" target="_blank" aria-label="Facebook" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/lotus_foto_editing/" target="_blank" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background-color: #f8f9e0;
+            margin: 5% auto;
+            padding: 0;
+            border: none;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            background-color: #f8f9e0;
+            color: #000000;
+            padding: 20px;
+            border-bottom: 2px solid #e7efc2;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            color: #000000;
+            font-size: 1.5rem;
+        }
+
+        .close {
+            color: #000000;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #1A361A;
+        }
+
+        .order-form {
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e7efc2;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e3a8a;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #f8f9e0;
+            color: #000000;
+            border: 2px solid #1A361A;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            border-color: #1e3a8a;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+        }
+    </style>
+
+    <!-- Order Form Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Form</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="orderName">Order name</label>
+                    <input type="text" id="orderName" name="orderName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fileCount">Number of files</label>
+                    <input type="number" id="fileCount" name="fileCount" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label>Services</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Photo Editing">
+                            <span>Photo Editing</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Day to Dusk">
+                            <span>Day to Dusk</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Item Removal">
+                            <span>Item Removal</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Floor Plan">
+                            <span>Floor Plan</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Virtual Staging & Renovation">
+                            <span>Virtual Staging & Renovation</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Please provide your photo links and any specific requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Order buttons functionality
+        function initOrderButtons() {
+            const orderButtons = document.querySelectorAll('.cta-button, .create-order-btn, .pricing-btn');
+            
+            orderButtons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('Order button clicked');
+                    
+                    // Redirect to order page
+                    window.location.href = 'order.html';
+                });
+            });
+        }
+
+        // Initialize order buttons when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            initOrderButtons();
+        });
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+

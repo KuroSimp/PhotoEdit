@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Virtual Renovation - Lotus Foto</title>
+    
+    <!-- Resource hints for performance -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <!-- Critical CSS inline -->
+    <style>
+        body{font-family:Arial,sans-serif;background:#fff;margin:0;padding:0;scroll-behavior:smooth}
+        .service-hero{background:linear-gradient(135deg,#1e3a8a 0%,#3b82f6 100%);padding:80px 0;color:white}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        img.lazy{opacity:0;transition:opacity 0.3s ease}
+        img.lazy.loaded{opacity:1}
+    </style>
+    
+    <!-- Non-critical CSS -->
+    <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    
+    <!-- Defer non-critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Performance optimizations */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-perspective: 1000;
+            perspective: 1000;
+        }
+
+        /* Optimized lazy loading styles */
+        img.lazy {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            will-change: opacity;
+        }
+
+        img.lazy.loaded {
+            opacity: 1;
+        }
+
+        /* Performance optimizations */
+        .hero-img {
+            will-change: transform;
+            transform: translateZ(0);
+        }
+
+        /* Reduce repaints */
+        * {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        /* Reduce motion for better performance */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            min-height: calc(100vh - 200px);
+            background-color: #ffffff;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Service Detail Pages */
+        .service-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            padding: 80px 0;
+            color: white;
+        }
+
+        .service-hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text {
+            text-align: left;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Hero Slider Styles */
+        .hero-slider {
+            position: relative;
+            width: 110%;
+            margin-right: -5%;
+            height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Navigation Arrows */
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #1e3a8a;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        .slider-arrow:hover {
+            background: rgba(255, 255, 255, 1);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-arrow.prev {
+            left: 20px;
+        }
+
+        .slider-arrow.next {
+            right: 20px;
+        }
+
+        /* Navigation Dots */
+        .slider-dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 2;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .dot.active {
+            background: #ffffff;
+            transform: scale(1.2);
+        }
+
+        .dot:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .service-hero-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .service-hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .free-trial-btn {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .free-trial-btn:hover {
+            background-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+        }
+
+        .process-section {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .process-list {
+            margin-top: 50px;
+        }
+
+        .process-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .process-items li {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #1e3a8a;
+            transition: all 0.3s ease;
+        }
+
+        .process-items li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .check-out-section {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .check-out-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            margin-top: 50px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .check-out-item {
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid #1e3a8a;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            will-change: transform;
+        }
+
+        .check-out-item:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .check-out-image {
+            flex-shrink: 0;
+            width: 500px;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .check-out-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.2s ease;
+        }
+
+        .check-out-item:hover .check-out-image img {
+            transform: scale(1.02);
+        }
+
+        /* Before/After Slider */
+        .before-after-slider {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: grab;
+        }
+
+        .before-after-slider:active {
+            cursor: grabbing;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .before-image,
+        .after-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .after-image {
+            opacity: 1;
+        }
+
+        .slider-line {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #ffffff;
+            z-index: 2;
+            transform: translateX(-50%);
+        }
+
+        .slider-handle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            z-index: 3;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .slider-handle:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .slider-handle i {
+            color: #1e3a8a;
+            font-size: 16px;
+        }
+
+        .check-out-content {
+            flex: 1;
+        }
+
+        .check-out-content h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .check-out-content p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .pricing-section {
+            padding: 80px 0;
+            background-color: #f8fafc;
+        }
+
+        .pricing-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            align-items: stretch;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #e5e7eb;
+            position: relative;
+            will-change: transform;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .pricing-card.featured {
+            border: 2px solid #1e3a8a;
+            transform: scale(1.05);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e3a8a;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .pricing-header h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            margin-bottom: 30px;
+        }
+
+        .currency {
+            font-size: 1.5rem;
+            color: #6b7280;
+            vertical-align: top;
+        }
+
+        .amount {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e3a8a;
+        }
+
+        .period {
+            font-size: 1rem;
+            color: #6b7280;
+            margin-left: 5px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+            flex-grow: 1;
+        }
+
+        .pricing-features li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6b7280;
+        }
+
+        .pricing-features i {
+            color: #22c55e;
+            font-size: 1.1rem;
+        }
+
+        .pricing-btn {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        .pricing-btn:hover {
+            background-color: #1a1a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .how-it-works {
+            padding: 80px 0;
+            background-color: white;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .step-item {
+            text-align: center;
+            padding: 30px 20px;
+            transition: transform 0.2s ease;
+            will-change: transform;
+        }
+
+        .step-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .step-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .step-item p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .create-order-section {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .create-order-btn {
+            background-color: #1e3a8a;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .create-order-btn:hover {
+            background-color: #1a1a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content {
+            background-color: #f8f9e0;
+            margin: 5% auto;
+            padding: 0;
+            border: none;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes modalSlideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .modal-header {
+            background-color: #f8f9e0;
+            color: #000000;
+            padding: 20px;
+            border-bottom: 2px solid #e7efc2;
+            border-radius: 10px 10px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            color: #000000;
+            font-size: 1.5rem;
+        }
+
+        .close {
+            color: #000000;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: #1A361A;
+        }
+
+        .order-form {
+            padding: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e7efc2;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e3a8a;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: normal;
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            background-color: #f8f9e0;
+            color: #000000;
+            border: 2px solid #1A361A;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            border-color: #1e3a8a;
+            box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .service-hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .hero-text {
+                text-align: center;
+            }
+            
+            .check-out-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .check-out-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .check-out-image {
+                width: 100%;
+                height: 200px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-img {
+                height: 250px;
+            }
+            
+            .hero-slider {
+                height: 250px;
+            }
+            
+            .slider-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+            
+            .slider-arrow.prev {
+                left: 10px;
+            }
+            
+            .slider-arrow.next {
+                right: 10px;
+            }
+            
+            .dot {
+                width: 10px;
+                height: 10px;
+            }
+            
+            .slider-dots {
+                bottom: 15px;
+                gap: 8px;
+            }
+            
+            .check-out-image {
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-section">
+                <img src="images/logo.png" alt="Lotus Foto Logo" class="logo-image" decoding="async">
+            </div>
+            <div class="header-right-section">
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <nav class="navigation" id="navigation">
+                    <ul class="nav-menu">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li class="dropdown">
+                            <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="photo-editing.html">Photo Editing</a></li>
+                                <li><a class="dropdown-item" href="day-to-dusk.html">Day to Dusk</a></li>
+                                <li><a class="dropdown-item" href="item-removal.html">Item Removal</a></li>
+                                <li><a class="dropdown-item" href="virtual-staging.html">Virtual Staging</a></li>
+                                <li><a class="dropdown-item" href="virtual-renovation.html">Virtual Renovation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#footer">Contact us</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Buy Now Button -->
+                <a href="order.html" class="buy-now-btn">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="service-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="hero-text">
+                        <h1 class="service-hero-title">Virtual Renovation Services</h1>
+                        <p class="service-hero-subtitle">Transform outdated properties into modern, appealing spaces with our professional virtual renovation services. Show potential buyers and investors the true potential of any property before any physical work begins.</p>
+                        <p class="service-hero-subtitle">With over <strong>08 years of experience</strong> in virtual renovation, we've helped thousands of real estate professionals, investors, and homeowners visualize complete property transformations that increase property values and accelerate sales.</p>
+                        <p class="service-hero-subtitle"><strong>We are committed to creating realistic and stunning virtual renovations that showcase the full potential of any property.</strong></p>
+                        <button class="free-trial-btn">Free Trial Test</button>
+                    </div>
+                    <div class="hero-image">
+                        <div class="hero-slider">
+                            <div class="slider-container">
+                                <div class="slide active">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/1-6bf.jpg" alt="Virtual Renovation - Kitchen" class="hero-img">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/1-2bf.jpg" alt="Virtual Renovation - Living Room" class="hero-img">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/1-3bf.jpg" alt="Virtual Renovation - Bedroom" class="hero-img">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/1-4bf.jpg" alt="Virtual Renovation - Bathroom" class="hero-img">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/1-1bf.jpg" alt="Virtual Renovation - Exterior" class="hero-img">
+                                </div>
+                            </div>
+                            
+                            <!-- Navigation arrows -->
+                            <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-arrow next" onclick="changeSlide(1)">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            
+                            <!-- Navigation dots -->
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Renovation Process -->
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title">Virtual Renovation Process</h2>
+                <div class="process-list">
+                    <ul class="process-items">
+                        <li>Property Assessment & Analysis</li>
+                        <li>Design Concept Development</li>
+                        <li>Architectural Planning</li>
+                        <li>Material & Color Selection</li>
+                        <li>3D Modeling & Visualization</li>
+                        <li>Lighting & Texture Application</li>
+                        <li>Furniture & Decor Placement</li>
+                        <li>Landscape & Exterior Design</li>
+                        <li>Final Rendering & Quality Check</li>
+                        <li>Project Delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Check Out What We Do -->
+        <section class="check-out-section">
+            <div class="container">
+                <h2 class="section-title">Check Out What We Do</h2>
+                <div class="check-out-grid">
+                    <div class="check-out-item">
+                        <div class="check-out-image">
+                            <div class="before-after-slider">
+                                <div class="slider-container">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/5 (kopie 2).jpg" alt="Before - Outdated Kitchen" class="before-image">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/5 (kopie).jpg" alt="After - Modern Kitchen" class="after-image">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <i class="fas fa-arrows-alt-h"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-out-content">
+                            <h3>Kitchen Renovation</h3>
+                            <p>Transform outdated kitchens into modern, functional spaces with new cabinets, countertops, appliances, and lighting. Our kitchen renovations focus on both aesthetics and functionality to create spaces that appeal to today's buyers.</p>
+                        </div>
+                    </div>
+                    <div class="check-out-item">
+                        <div class="check-out-image">
+                            <div class="before-after-slider">
+                                <div class="slider-container">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/bath1.jpg" alt="Before - Old Bathroom" class="before-image">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/bath2.jpg" alt="After - Modern Bathroom" class="after-image">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <i class="fas fa-arrows-alt-h"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-out-content">
+                            <h3>Bathroom Renovation</h3>
+                            <p>Modernize bathrooms with contemporary fixtures, tiles, vanities, and lighting. Our bathroom renovations create spa-like retreats that add significant value to any property and appeal to luxury-minded buyers.</p>
+                        </div>
+                    </div>
+                    <div class="check-out-item">
+                        <div class="check-out-image">
+                            <div class="before-after-slider">
+                                <div class="slider-container">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/DSC09921.jpg" alt="Before - Outdated Living Room" class="before-image">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/DSC09921_1.jpg" alt="After - Modern Living Room" class="after-image">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <i class="fas fa-arrows-alt-h"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-out-content">
+                            <h3>Living Room Renovation</h3>
+                            <p>Create open, modern living spaces with updated flooring, lighting, and contemporary design elements. Our living room renovations maximize space and create welcoming environments for families and entertaining.</p>
+                        </div>
+                    </div>
+                    <div class="check-out-item">
+                        <div class="check-out-image">
+                            <div class="before-after-slider">
+                                <div class="slider-container">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/37..jpg" alt="Before - Outdated Outdoor Space" class="before-image">
+                                    <img src="images/Sample Lotus Foto/Virtual Renovation/37.jpg" alt="After - Modern Outdoor Space" class="after-image">
+                                    <div class="slider-line"></div>
+                                    <div class="slider-handle">
+                                        <i class="fas fa-arrows-alt-h"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="check-out-content">
+                            <h3>Outdoor Renovation</h3>
+                            <p>Transform outdoor spaces into beautiful, functional areas with modern landscaping, patios, and outdoor living features. Our outdoor renovations create stunning spaces that extend your living area and increase property value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="pricing-section">
+            <div class="container">
+                <h2 class="section-title">Virtual Renovation Prices</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Complete Home Renovation</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">25.00</span>
+                                <span class="period">per room</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i>Entire property renovation</li>
+                            <li><i class="fas fa-check"></i>Custom architectural design</li>
+                            <li><i class="fas fa-check"></i>Luxury materials & finishes</li>
+                            <li><i class="fas fa-check"></i>Turnaround: 48-72 hours</li>
+                        </ul>
+                        <button class="pricing-btn">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How Does It Work</h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h3>Upload property photos</h3>
+                        <p>Send us photos of the current state of your property that needs renovation</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h3>Discuss renovation goals</h3>
+                        <p>Tell us about your renovation vision, budget, and specific requirements</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h3>Review renovation concepts</h3>
+                        <p>Review our proposed renovation designs and request modifications if needed</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <h3>Get your renovation visuals</h3>
+                        <p>Receive high-quality virtual renovation images within 48-72 hours</p>
+                    </div>
+                </div>
+                <div class="create-order-section">
+                    <button class="create-order-btn">Create Order</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Hero Slider functionality
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let slideInterval;
+
+        function showSlide(index) {
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Add active class to current slide and dot
+            if (slides[index]) {
+                slides[index].classList.add('active');
+            }
+            if (dots[index]) {
+                dots[index].classList.add('active');
+            }
+        }
+
+        function changeSlide(direction) {
+            currentSlideIndex += direction;
+            
+            if (currentSlideIndex >= slides.length) {
+                currentSlideIndex = 0;
+            } else if (currentSlideIndex < 0) {
+                currentSlideIndex = slides.length - 1;
+            }
+            
+            showSlide(currentSlideIndex);
+            resetSlideInterval();
+        }
+
+        function currentSlide(index) {
+            currentSlideIndex = index - 1;
+            showSlide(currentSlideIndex);
+            resetSlideInterval();
+        }
+
+        function nextSlide() {
+            changeSlide(1);
+        }
+
+        function startSlideInterval() {
+            slideInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+        }
+
+        function resetSlideInterval() {
+            clearInterval(slideInterval);
+            startSlideInterval();
+        }
+
+        function initHeroSlider() {
+            if (slides.length > 0) {
+                // Initialize first slide
+                showSlide(0);
+                
+                // Start auto-play
+                startSlideInterval();
+                
+                // Pause on hover
+                const heroSlider = document.querySelector('.hero-slider');
+                if (heroSlider) {
+                    heroSlider.addEventListener('mouseenter', () => {
+                        clearInterval(slideInterval);
+                    });
+                    
+                    heroSlider.addEventListener('mouseleave', () => {
+                        startSlideInterval();
+                    });
+                }
+            }
+        }
+
+        // Before/After Slider functionality
+        function initSliders() {
+            console.log('Initializing sliders...');
+            const sliders = document.querySelectorAll('.before-after-slider');
+            console.log('Found sliders:', sliders.length);
+            
+            sliders.forEach((slider, index) => {
+                console.log(`Setting up slider ${index + 1}`);
+                
+                const beforeImage = slider.querySelector('.before-image');
+                const afterImage = slider.querySelector('.after-image');
+                const sliderHandle = slider.querySelector('.slider-handle');
+                const sliderLine = slider.querySelector('.slider-line');
+                
+                if (!beforeImage || !afterImage || !sliderHandle || !sliderLine) {
+                    console.log(`Slider ${index + 1} missing elements`);
+                    return;
+                }
+                
+                let isDragging = false;
+                
+                function updateSlider(percentage) {
+                    // Update clip-path for before image (left side)
+                    beforeImage.style.clipPath = `polygon(0 0, ${percentage}% 0, ${percentage}% 100%, 0 100%)`;
+                    
+                    // Update clip-path for after image (right side)
+                    afterImage.style.clipPath = `polygon(${percentage}% 0, 100% 0, 100% 100%, ${percentage}% 100%)`;
+                    
+                    // Update slider handle position
+                    sliderHandle.style.left = `${percentage}%`;
+                    sliderLine.style.left = `${percentage}%`;
+                }
+                
+                function startDrag(e) {
+                    isDragging = true;
+                    sliderHandle.style.cursor = 'grabbing';
+                    e.preventDefault();
+                }
+                
+                function drag(e) {
+                    if (!isDragging) return;
+                    
+                    e.preventDefault();
+                    const rect = slider.getBoundingClientRect();
+                    const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+                    const x = clientX - rect.left;
+                    const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+                    
+                    updateSlider(percentage);
+                }
+                
+                function stopDrag() {
+                    isDragging = false;
+                    sliderHandle.style.cursor = 'grab';
+                }
+                
+                // Mouse events
+                sliderHandle.addEventListener('mousedown', startDrag);
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('mouseup', stopDrag);
+                
+                // Touch events for mobile
+                sliderHandle.addEventListener('touchstart', startDrag);
+                document.addEventListener('touchmove', drag);
+                document.addEventListener('touchend', stopDrag);
+                
+                // Click on slider area
+                slider.addEventListener('click', function(e) {
+                    if (!isDragging) {
+                        const rect = slider.getBoundingClientRect();
+                        const x = e.clientX - rect.left;
+                        const percentage = (x / rect.width) * 100;
+                        updateSlider(percentage);
+                    }
+                });
+                
+                // Initialize slider at 50%
+                updateSlider(50);
+            });
+        }
+
+        // Free Trial button functionality
+        function initFreeTrialButton() {
+            const freeTrialBtn = document.querySelector('.free-trial-btn');
+            
+            if (freeTrialBtn) {
+                freeTrialBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Add click animation
+                    freeTrialBtn.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        freeTrialBtn.style.transform = '';
+                    }, 150);
+                    
+                    console.log('Free Trial clicked');
+                    
+                    // Redirect to order page
+                    window.location.href = 'order.html';
+                });
+            }
+        }
+
+        // Pricing buttons functionality
+        function initPricingButtons() {
+            const pricingBtns = document.querySelectorAll('.pricing-btn');
+            
+            pricingBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Add click animation
+                    btn.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        btn.style.transform = '';
+                    }, 150);
+                    
+                    console.log('Pricing button clicked');
+                    
+                    // Redirect to order page
+                    window.location.href = 'order.html';
+                });
+            });
+        }
+
+        // Create Order button functionality
+        function initCreateOrderButton() {
+            const createOrderBtn = document.querySelector('.create-order-btn');
+            
+            if (createOrderBtn) {
+                createOrderBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Add click animation
+                    createOrderBtn.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        createOrderBtn.style.transform = '';
+                    }, 150);
+                    
+                    console.log('Create Order clicked');
+                    
+                    // Redirect to order page
+                    window.location.href = 'order.html';
+                });
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        function initSmoothScrolling() {
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Optimized lazy loading for images
+        function initLazyLoading() {
+            const images = document.querySelectorAll('img[data-src]');
+            
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            img.classList.add('loaded');
+                            observer.unobserve(img);
+                        }
+                    });
+                }, {
+                    rootMargin: '50px 0px',
+                    threshold: 0.01
+                });
+
+                images.forEach(img => imageObserver.observe(img));
+            } else {
+                // Fallback for older browsers
+                images.forEach(img => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('lazy');
+                    img.classList.add('loaded');
+                });
+            }
+        }
+
+        // Add loading animation
+        function initLoadingAnimation() {
+            document.body.classList.add('loaded');
+        }
+
+        // Optimized debounce function for performance
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Throttle function for scroll events
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Smooth scroll for contact links
+        function initSmoothScroll() {
+            console.log('Initializing smooth scroll...');
+            const contactLinks = document.querySelectorAll('a[href="#footer"]');
+            console.log('Found contact links:', contactLinks.length);
+            
+            contactLinks.forEach((link, index) => {
+                console.log(`Setting up link ${index + 1}:`, link);
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Contact link clicked!');
+                    const footer = document.getElementById('footer');
+                    console.log('Footer element:', footer);
+                    if (footer) {
+                        console.log('Scrolling to footer...');
+                        footer.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    } else {
+                        console.error('Footer not found!');
+                    }
+                });
+            });
+        }
+
+        // Order Modal functionality
+        function initOrderModal() {
+            const orderModal = document.getElementById('orderModal');
+            const closeBtn = document.querySelector('.close');
+            const orderForm = document.getElementById('orderForm');
+            
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    orderModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+            
+            // Close modal when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === orderModal) {
+                    orderModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Form submission
+            if (orderForm) {
+                orderForm.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    console.log('Order form submitted');
+                    // Add your form submission logic here
+                    alert('Order submitted successfully!');
+                    orderModal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+        }
+
+        // Optimized initialization with requestIdleCallback
+        function initPage() {
+            // Critical functions first
+            initLazyLoading();
+            initHeroSlider();
+            initSliders();
+            
+            // Use requestIdleCallback for non-critical functions
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(() => {
+                    initSmoothScroll();
+                    initOrderModal();
+                    initFreeTrialButton();
+                    initPricingButtons();
+                    initCreateOrderButton();
+                    initSmoothScrolling();
+                    initLoadingAnimation();
+                });
+            } else {
+                // Fallback for older browsers
+                setTimeout(() => {
+                    initSmoothScroll();
+                    initOrderModal();
+                    initFreeTrialButton();
+                    initPricingButtons();
+                    initCreateOrderButton();
+                    initSmoothScrolling();
+                    initLoadingAnimation();
+                }, 100);
+            }
+        }
+
+        // Initialize when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initPage);
+        } else {
+            initPage();
+        }
+
+        // Add some utility functions
+        const utils = {
+            // Debounce function for performance
+            debounce: (func, wait) => {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            },
+            
+            // Check if element is in viewport
+            isInViewport: (element) => {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+        };
+
+        // Export for potential module use
+        if (typeof module !== 'undefined' && module.exports) {
+            module.exports = { BeforeAfterSlider, utils };
+        }
+    </script>
+
+    <!-- Order Form Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Form</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="orderName">Order name</label>
+                    <input type="text" id="orderName" name="orderName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fileCount">Number of files</label>
+                    <input type="number" id="fileCount" name="fileCount" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label>Services</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Photo Editing">
+                            <span>Photo Editing</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Day to Dusk">
+                            <span>Day to Dusk</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Item Removal">
+                            <span>Item Removal</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Floor Plan">
+                            <span>Floor Plan</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Virtual Staging & Renovation">
+                            <span>Virtual Staging & Renovation</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Please provide your photo links and any specific requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-column footer-links">
+                    <h3 class="footer-title">USEFUL LINKS</h3>
+                    <ul class="footer-list">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="index.html#faq">FAQ</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-services">
+                    <h3 class="footer-title">SERVICES</h3>
+                    <ul class="footer-list with-icons">
+                        <li><i class="fas fa-check"></i><span>Photo editing</span></li>
+                        <li><i class="fas fa-check"></i><span>Day to Dusk</span></li>
+                        <li><i class="fas fa-check"></i><span>Item Removal</span></li>
+                        <li><i class="fas fa-check"></i><span>Virtual Staging & Renovations</span></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3 class="footer-title">CONTACT</h3>
+                    <ul class="footer-list with-icons">
+                        <li><i class="fas fa-building"></i><span>Lotus Foto - Real Estate Photo Editing</span></li>
+                        <li><i class="fas fa-location-dot"></i><span>Chúc sơn - Chương Mỹ - Hà Nội, Vietnam</span></li>
+                        <li><i class="fas fa-envelope"></i><span>lotus.foto.sale@gmail.com</span></li>
+                        <li><i class="fas fa-envelope"></i><span>contact.lotusfoto@gmail.com</span></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-social">
+                    <h3 class="footer-title">SOCIAL</h3>
+                    <div class="social-media-section">
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61579599152434&locale=vi_VN" target="_blank" aria-label="Facebook" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/lotus_foto_editing/" target="_blank" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

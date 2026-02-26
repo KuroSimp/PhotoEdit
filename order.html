@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Order Form - Lotus Foto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .order-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #f8f9e0;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .back-btn {
+            background: #f8f9e0;
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .back-btn:hover {
+            background: #1e3a8a;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+        }
+
+        .order-form {
+            padding: 60px;
+        }
+
+        .form-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .form-title h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        .form-title p {
+            font-size: 1.3rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #1e3a8a;
+            font-size: 1.2rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid #e7efc2;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e3a8a;
+            box-shadow: 0 0 0 4px rgba(30, 58, 138, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-weight: normal;
+            padding: 15px 20px;
+            border: 2px solid #e7efc2;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .checkbox-label:hover {
+            border-color: #1e3a8a;
+            background-color: rgba(30, 58, 138, 0.05);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.1);
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: auto;
+            margin-right: 15px;
+            transform: scale(1.3);
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #1e3a8a, #1e3a8a);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            
+            .order-container {
+                max-width: 100%;
+            }
+            
+            .form-title h1 {
+                font-size: 2.2rem;
+            }
+            
+            .form-title p {
+                font-size: 1.1rem;
+            }
+            
+            .order-form {
+                padding: 40px 25px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .checkbox-group {
+                grid-template-columns: 1fr;
+            }
+            
+            .back-btn {
+                margin: 20px;
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="order-container">
+        <a href="index.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Home
+        </a>
+        
+        <div class="order-form">
+            <div class="form-title">
+                <h1>Place Your Order</h1>
+                <p>Get professional photo editing services with our easy-to-use order form</p>
+            </div>
+            
+            <form id="orderForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your name*</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your email*</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="orderName">Order name</label>
+                        <input type="text" id="orderName" name="orderName" placeholder="Give your order a name (optional)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fileCount">Number of files</label>
+                        <input type="number" id="fileCount" name="fileCount" min="1" placeholder="How many photos do you want to edit?">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Services*</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Photo Editing">
+                            <span>Photo Editing</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Day to Dusk">
+                            <span>Day to Dusk</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Item Removal">
+                            <span>Item Removal</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Virtual Staging & Renovation">
+                            <span>Virtual Staging & Renovation</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Please provide your photo links and any specific requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Submit Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init('oePYhOLnFauHGVWxo');
+        })();
+
+        // Order form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const orderForm = document.getElementById('orderForm');
+            
+            if (orderForm) {
+                orderForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(orderForm);
+                    const data = {
+                        from_name: formData.get('name'),
+                        from_email: formData.get('email'),
+                        order_name: formData.get('orderName'),
+                        file_count: formData.get('fileCount'),
+                        services: formData.getAll('services').join(', '),
+                        message: formData.get('message')
+                    };
+                    
+                    // Send email using EmailJS
+                    emailjs.send('service_kmrw0ry', 'template_82o99g6', data)
+                        .then(function(response) {
+                            alert('Order submitted successfully! We will contact you within 24 hours.');
+                            orderForm.reset();
+                        }, function(error) {
+                            alert('There was an error sending your order. Please try again or contact us directly.');
+                        });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
