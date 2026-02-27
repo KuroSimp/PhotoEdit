@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="header-container">
             <!-- Logo Section -->
             <div class="logo-section">
-                <img src="images/logo.png" alt="Lotus Foto Logo" class="logo-image">
+                <img src="images/logo.png" alt="Lotus Foto Logo" class="logo-image" decoding="async">
             </div>
 
             <!-- Right Section -->
@@ -64,22 +64,22 @@
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <div class="banner-slide" style="background-image: url('images/banner2.jpg');"></div>
+                    <div class="banner-slide" style="background-image: url('images/banner2.jpg');" data-bg-loaded="true"></div>
                 </div>
                 
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <div class="banner-slide" style="background-image: url('images/banner3.jpg');"></div>
+                    <div class="banner-slide" data-bg="images/banner3.jpg"></div>
                 </div>
                 
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <div class="banner-slide" style="background-image: url('images/banner4.jpg');"></div>
+                    <div class="banner-slide" data-bg="images/banner4.jpg"></div>
                 </div>
                 
                 <!-- Slide 4 -->
                 <div class="carousel-item">
-                    <div class="banner-slide" style="background-image: url('images/banner5.jpg');"></div>
+                    <div class="banner-slide" data-bg="images/banner5.jpg"></div>
                 </div>
             </div>
             
@@ -107,7 +107,7 @@
             </div>
             
             <div class="banner-bottom">
-                <div class="banner-services">
+                <div class="banner-services" id="react-banner-services" data-services="Real Estate Photo Editing|Virtual Twilight Conversion|Item removal|Real Estate Video">
                     <div class="service-item">
                         <i class="fas fa-check"></i>
                         <span>Real Estate Photo Editing</span>
@@ -127,7 +127,7 @@
                 </div>
                 
                 <div class="banner-image">
-                    <img src="images/banner.png" alt="Real Estate Photography" class="banner-img">
+                    <img src="images/banner.png" alt="Real Estate Photography" class="banner-img" loading="eager" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </div>
@@ -147,8 +147,8 @@
                     </p>
                     <div class="before-after-container">
                         <div class="before-after-image">
-                            <img src="images/PHOTO EDITING/7X5A7819.jpg" alt="Before Photo Editing" class="before-image">
-                            <img src="images/PHOTO EDITING/7X5A7819_1.jpg" alt="After Photo Editing" class="after-image">
+                            <img src="images/PHOTO EDITING/7X5A7819.jpg" alt="Before Photo Editing" class="before-image" loading="lazy" decoding="async">
+                            <img src="images/PHOTO EDITING/7X5A7819_1.jpg" alt="After Photo Editing" class="after-image" loading="lazy" decoding="async">
                             <div class="slider-line"></div>
                             <div class="slider-handle">
                                 <div class="slider-arrow left">‹</div>
@@ -166,8 +166,8 @@
                     </p>
                     <div class="before-after-container">
                         <div class="before-after-image">
-                            <img src="images/DAY TO DUSK/anh trk.jpg" alt="Before Day to Dusk" class="before-image">
-                            <img src="images/DAY TO DUSK/sau.jpg" alt="After Day to Dusk" class="after-image">
+                            <img src="images/DAY TO DUSK/anh trk.jpg" alt="Before Day to Dusk" class="before-image" loading="lazy" decoding="async">
+                            <img src="images/DAY TO DUSK/sau.jpg" alt="After Day to Dusk" class="after-image" loading="lazy" decoding="async">
                             <div class="slider-line"></div>
                             <div class="slider-handle">
                                 <div class="slider-arrow left">‹</div>
@@ -185,8 +185,8 @@
                     </p>
                     <div class="before-after-container">
                         <div class="before-after-image">
-                            <img src="images/ITEM REMOVAL/2.jpg" alt="Before Item Removal" class="before-image">
-                            <img src="images/ITEM REMOVAL/1.jpg" alt="After Item Removal" class="after-image">
+                            <img src="images/ITEM REMOVAL/2.jpg" alt="Before Item Removal" class="before-image" loading="lazy" decoding="async">
+                            <img src="images/ITEM REMOVAL/1.jpg" alt="After Item Removal" class="after-image" loading="lazy" decoding="async">
                             <div class="slider-line"></div>
                             <div class="slider-handle">
                                 <div class="slider-arrow left">‹</div>
@@ -205,8 +205,8 @@
                     </p>
                     <div class="before-after-container">
                         <div class="before-after-image">
-                            <img src="images/Sample Lotus Foto/Virtual Staging/1before.jpg" alt="Before Virtual Staging" class="before-image">
-                            <img src="images/Sample Lotus Foto/Virtual Staging/1after.jpg" alt="After Virtual Staging" class="after-image">
+                            <img src="images/Sample Lotus Foto/Virtual Staging/1before.jpg" alt="Before Virtual Staging" class="before-image" loading="lazy" decoding="async">
+                            <img src="images/Sample Lotus Foto/Virtual Staging/1after.jpg" alt="After Virtual Staging" class="after-image" loading="lazy" decoding="async">
                             <div class="slider-line"></div>
                             <div class="slider-handle">
                                 <div class="slider-arrow left">‹</div>
@@ -224,8 +224,8 @@
                     </p>
                     <div class="before-after-container">
                         <div class="before-after-image">
-                            <img src="images/1.jpg" alt="Before Virtual Renovation" class="before-image">
-                            <img src="images/2.jpg" alt="After Virtual Renovation" class="after-image">
+                            <img src="images/1.jpg" alt="Before Virtual Renovation" class="before-image" loading="lazy" decoding="async">
+                            <img src="images/2.jpg" alt="After Virtual Renovation" class="after-image" loading="lazy" decoding="async">
                             <div class="slider-line"></div>
                             <div class="slider-handle">
                                 <div class="slider-arrow left">‹</div>
@@ -249,8 +249,10 @@
                 <iframe 
                     src="https://www.youtube.com/embed/FfPlHTAt458" 
                     title="Real Estate Video Editing"
+                    loading="lazy"
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    referrerpolicy="strict-origin-when-cross-origin"
                     allowfullscreen>
                 </iframe>
                 
@@ -438,134 +440,6 @@
     </section>
     </div>
 
-    <!-- PHOTO EDITING PAGE (renders when hash=#photo-editing) -->
-    <div id="photo-editing-page" class="site-page page-hidden">
-        <!-- Top image slider -->
-        <section class="pe-top-slider">
-            <div class="pe-container">
-                <div class="pe-skeleton" id="peTopSkeleton"></div>
-                <div class="pe-multi-slider is-hidden" data-visible="3" data-autoplay="true" data-interval="3500">
-                    <button class="pe-nav pe-prev" aria-label="Previous"></button>
-                    <div class="pe-viewport">
-                        <div class="pe-track">
-                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg" loading="lazy" alt="slide 1">
-                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg" loading="lazy" alt="slide 2">
-                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg" loading="lazy" alt="slide 3">
-                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05935.jpg" loading="lazy" alt="slide 4">
-                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC05970.jpg" loading="lazy" alt="slide 5">
-                            <img src="images/Sample Lotus Foto/HDR Blending/2/DSC06031.jpg" loading="lazy" alt="slide 6">
-                        </div>
-                    </div>
-                    <button class="pe-nav pe-next" aria-label="Next"></button>
-                </div>
-            </div>
-        </section>
-        <section class="pe-hero">
-            <div class="pe-container">
-                <h1 class="pe-title">Real Estate Photo Editing Services</h1>
-                <p class="pe-lead">With over <strong>08 years of experience</strong> in real estate photo editing services, Egecko Team has served hundreds of satisfied customers worldwide. Our editing process is standardized with 14 steps, you can see it below.</p>
-                <p class="pe-text">Especially, we have a person to <strong>control the quality of the product</strong> before sending it back to the customer, he is Lucas. After the editor completes the job, Lucas will check again to make sure the work is of the highest quality, and the customer's requirements have been completed.</p>
-                <p class="pe-text"><strong>We are committed to high and consistency quality</strong> before sending photos back to the customer.</p>
-                <div class="pe-cta"><a href="#contact" class="cta-button">Free Trial Test</a></div>
-            </div>
-        </section>
-
-        <section class="pe-process">
-            <div class="pe-container">
-                <h2 class="pe-section-title">Photo Editing Process</h2>
-                <div class="pe-card">
-                    <ul>
-                        <li>Exposures merging/ Blending</li>
-                        <li>Correct Color</li>
-                        <li>Correct Lens Distortion</li>
-                        <li>Adjust Brightness & Contrast</li>
-                        <li>Remove Lens Spot</li>
-                        <li>Remove Camera & Reflection</li>
-                        <li>Manual Blending + Manual Flash Ambient Blending</li>
-                        <li>Add TV Screen & Fire to Fireplace</li>
-                        <li>Interior Window Replacements</li>
-                        <li>Sky Replacements</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="pe-showcase">
-            <div class="pe-container">
-                <h2 class="pe-section-title alt">Check Out What We Do</h2>
-                <div class="pe-grid">
-                    <div class="before-after-container">
-                        <div class="before-after-image">
-                            <img src="images/Sample Lotus Foto/Virtual Staging/1before.jpg" alt="Before" class="before-image">
-                            <img src="images/Sample Lotus Foto/Virtual Staging/1after.jpg" alt="After" class="after-image">
-                            <div class="slider-line"></div>
-                            <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
-                        </div>
-                    </div>
-                    <div class="before-after-container">
-                        <div class="before-after-image">
-                            <img src="images/PHOTO EDITING/7X5A7819_1.jpg" alt="Before" class="before-image">
-                            <img src="images/PHOTO EDITING/7X5A7819.jpg" alt="After" class="after-image">
-                            <div class="slider-line"></div>
-                            <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
-                        </div>
-                    </div>
-                    <div class="before-after-container">
-                        <div class="before-after-image">
-                            <img src="images/DAY TO DUSK/anh trk.jpg" alt="Before" class="before-image">
-                            <img src="images/DAY TO DUSK/sau.jpg" alt="After" class="after-image">
-                            <div class="slider-line"></div>
-                            <div class="slider-handle"><div class="slider-arrow left">‹</div><div class="slider-arrow right">›</div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="pe-prices">
-            <div class="pe-container">
-                <h2 class="pe-section-title">Real Estate Photo Editing Prices</h2>
-                <div class="pricing-grid">
-                    <!-- Reuse existing pricing cards -->
-                    <div class="pricing-card basic">
-                        <div class="pricing-header">
-                            <span class="pricing-photo">Photo</span>
-                            <h3 class="pricing-name">Basic Editing</h3>
-                        </div>
-                        <div class="pricing-features">
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>01 exposure editing</span></div>
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>14 Steps Editing Process</span></div>
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>Turnaround: 12–15 hours</span></div>
-                        </div>
-                    </div>
-                    <div class="pricing-card standard">
-                        <div class="pricing-header">
-                            <span class="pricing-photo">Photo</span>
-                            <h3 class="pricing-name">Standard Editing</h3>
-                        </div>
-                        <div class="pricing-features">
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>02 – 03 exposures editing</span></div>
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>14 Steps Editing Process</span></div>
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>Turnaround: 12–15 hours</span></div>
-                        </div>
-                    </div>
-                    <div class="pricing-card advanced">
-                        <div class="pricing-header">
-                            <span class="pricing-photo">Photo</span>
-                            <h3 class="pricing-name">Advanced Editing</h3>
-                        </div>
-                        <div class="pricing-features">
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>04+ exposures editing</span></div>
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>14 Steps Editing Process</span></div>
-                            <div class="feature-item included"><span class="checkmark">✔</span><span>Turnaround: 12–15 hours</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pe-cta"><a href="order.html" class="cta-button">Create Order</a></div>
-            </div>
-        </section>
-    </div>
-
     <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="footer-container">
@@ -619,7 +493,10 @@
     
 
     <!-- EmailJS CDN -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js" crossorigin="anonymous" defer></script>
+    <script src="react-banner-services.js" defer></script>
+    <script src="main.js" defer></script>
 </body>
 </html>

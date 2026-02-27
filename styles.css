@@ -1,5 +1,9 @@
 .page-hidden { display:none; }
 .site-page, .site-home { contain: content; }
+.site-home > section:not(.banner) {
+    content-visibility: auto;
+    contain-intrinsic-size: 900px;
+}
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -943,6 +947,7 @@ body {
 .banner-slide {
     position: relative;
     height: 100vh;
+    background-color: #1e3a8a;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -654,6 +654,41 @@ function initServicesDropdown() {
     });
 }
 
+// Defer non-active banner backgrounds so the homepage doesn't fetch all hero slides at parse time
+function initDeferredBannerCarousel() {
+    const carousel = document.getElementById('bannerCarousel');
+    if (!carousel) return;
+
+    const applyBackground = (slideEl) => {
+        if (!slideEl || slideEl.dataset.bgLoaded === 'true') return;
+        const bg = slideEl.dataset.bg;
+        if (!bg) return;
+        slideEl.style.backgroundImage = `url('${bg}')`;
+        slideEl.dataset.bgLoaded = 'true';
+    };
+
+    const activeSlide = carousel.querySelector('.carousel-item.active .banner-slide[data-bg]');
+    applyBackground(activeSlide);
+
+    carousel.addEventListener('slide.bs.carousel', function(event) {
+        const incomingSlide = event.relatedTarget && event.relatedTarget.querySelector('.banner-slide[data-bg]');
+        applyBackground(incomingSlide);
+    });
+
+    const warmNextSlides = () => {
+        const pending = carousel.querySelectorAll('.banner-slide[data-bg]:not([data-bg-loaded=\"true\"])');
+        pending.forEach((slideEl, index) => {
+            setTimeout(() => applyBackground(slideEl), index * 400);
+        });
+    };
+
+    if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(warmNextSlides, { timeout: 3000 });
+    } else {
+        setTimeout(warmNextSlides, 1200);
+    }
+}
+
 // Mobile Menu Toggle functionality
 function initMobileMenu() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
@@ -711,6 +746,7 @@ function initMobileMenu() {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    initDeferredBannerCarousel();
     initBeforeAfterSliders();
     initGallery();
     initLazyLoader();
