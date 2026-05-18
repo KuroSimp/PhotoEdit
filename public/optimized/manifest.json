@@ -1,0 +1,1467 @@
+{
+  "generatedAt": "2026-05-14T07:37:21.952Z",
+  "maxDimension": 2048,
+  "webpQuality": 86,
+  "totalImages": 182,
+  "originalBytes": 639810248,
+  "optimizedBytes": 50919214,
+  "savingsPercent": 92.04,
+  "images": [
+    {
+      "source": "/images/1.jpg",
+      "optimized": "/optimized/1.jpg.webp",
+      "originalBytes": 606427,
+      "optimizedBytes": 373698,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/2.jpg",
+      "optimized": "/optimized/2.jpg.webp",
+      "originalBytes": 405297,
+      "optimizedBytes": 236206,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/banner.png",
+      "optimized": "/optimized/banner.png.webp",
+      "originalBytes": 1099837,
+      "optimizedBytes": 76512,
+      "width": 1280,
+      "height": 719
+    },
+    {
+      "source": "/images/banner2.jpg",
+      "optimized": "/optimized/banner2.jpg.webp",
+      "originalBytes": 2847802,
+      "optimizedBytes": 644958,
+      "width": 2000,
+      "height": 1500
+    },
+    {
+      "source": "/images/banner3.jpg",
+      "optimized": "/optimized/banner3.jpg.webp",
+      "originalBytes": 2451332,
+      "optimizedBytes": 562704,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "source": "/images/banner4.jpg",
+      "optimized": "/optimized/banner4.jpg.webp",
+      "originalBytes": 2552574,
+      "optimizedBytes": 609718,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "source": "/images/banner5.jpg",
+      "optimized": "/optimized/banner5.jpg.webp",
+      "originalBytes": 2687956,
+      "optimizedBytes": 602914,
+      "width": 2000,
+      "height": 1333
+    },
+    {
+      "source": "/images/Checkout/adven1.jpg",
+      "optimized": "/optimized/Checkout/adven1.jpg.webp",
+      "originalBytes": 502561,
+      "optimizedBytes": 312324,
+      "width": 1920,
+      "height": 1441
+    },
+    {
+      "source": "/images/Checkout/adven2.jpg",
+      "optimized": "/optimized/Checkout/adven2.jpg.webp",
+      "originalBytes": 528303,
+      "optimizedBytes": 354016,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/Checkout/basic1.jpg",
+      "optimized": "/optimized/Checkout/basic1.jpg.webp",
+      "originalBytes": 90558,
+      "optimizedBytes": 44516,
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "source": "/images/Checkout/basic2.jpg",
+      "optimized": "/optimized/Checkout/basic2.jpg.webp",
+      "originalBytes": 166104,
+      "optimizedBytes": 97040,
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "source": "/images/Checkout/stan1.jpg",
+      "optimized": "/optimized/Checkout/stan1.jpg.webp",
+      "originalBytes": 508374,
+      "optimizedBytes": 184130,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Checkout/stan2.jpg",
+      "optimized": "/optimized/Checkout/stan2.jpg.webp",
+      "originalBytes": 686110,
+      "optimizedBytes": 291606,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/DAY TO DUSK/anh trk.jpg",
+      "optimized": "/optimized/DAY TO DUSK/anh trk.jpg.webp",
+      "originalBytes": 94381,
+      "optimizedBytes": 103430,
+      "width": 1080,
+      "height": 608
+    },
+    {
+      "source": "/images/DAY TO DUSK/sau lam.jpg",
+      "optimized": "/optimized/DAY TO DUSK/sau lam.jpg.webp",
+      "originalBytes": 262868,
+      "optimizedBytes": 89926,
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "source": "/images/DAY TO DUSK/sau.jpg",
+      "optimized": "/optimized/DAY TO DUSK/sau.jpg.webp",
+      "originalBytes": 76752,
+      "optimizedBytes": 77414,
+      "width": 1080,
+      "height": 608
+    },
+    {
+      "source": "/images/DAY TO DUSK/truoc.jpg",
+      "optimized": "/optimized/DAY TO DUSK/truoc.jpg.webp",
+      "originalBytes": 328974,
+      "optimizedBytes": 131068,
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "source": "/images/how does it work/1.png",
+      "optimized": "/optimized/how does it work/1.png.webp",
+      "originalBytes": 18629,
+      "optimizedBytes": 2468,
+      "width": 300,
+      "height": 157
+    },
+    {
+      "source": "/images/how does it work/2.png",
+      "optimized": "/optimized/how does it work/2.png.webp",
+      "originalBytes": 3358,
+      "optimizedBytes": 5400,
+      "width": 225,
+      "height": 225
+    },
+    {
+      "source": "/images/how does it work/3.webp",
+      "optimized": "/optimized/how does it work/3.webp.webp",
+      "originalBytes": 49066,
+      "optimizedBytes": 25716,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "source": "/images/how does it work/4.png",
+      "optimized": "/optimized/how does it work/4.png.webp",
+      "originalBytes": 11787,
+      "optimizedBytes": 8480,
+      "width": 300,
+      "height": 300
+    },
+    {
+      "source": "/images/ITEM REMOVAL/1.jpg",
+      "optimized": "/optimized/ITEM REMOVAL/1.jpg.webp",
+      "originalBytes": 2027788,
+      "optimizedBytes": 166998,
+      "width": 2048,
+      "height": 1362
+    },
+    {
+      "source": "/images/ITEM REMOVAL/2.jpg",
+      "optimized": "/optimized/ITEM REMOVAL/2.jpg.webp",
+      "originalBytes": 1147193,
+      "optimizedBytes": 253780,
+      "width": 2048,
+      "height": 1362
+    },
+    {
+      "source": "/images/logo.png",
+      "optimized": "/optimized/logo.png.webp",
+      "originalBytes": 100849,
+      "optimizedBytes": 25574,
+      "width": 500,
+      "height": 500
+    },
+    {
+      "source": "/images/PHOTO EDITING/7X5A7819.jpg",
+      "optimized": "/optimized/PHOTO EDITING/7X5A7819.jpg.webp",
+      "originalBytes": 465743,
+      "optimizedBytes": 66230,
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "source": "/images/PHOTO EDITING/7X5A7819_1.jpg",
+      "optimized": "/optimized/PHOTO EDITING/7X5A7819_1.jpg.webp",
+      "originalBytes": 450939,
+      "optimizedBytes": 71712,
+      "width": 1080,
+      "height": 720
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/1.jpg.webp",
+      "originalBytes": 196792,
+      "optimizedBytes": 230630,
+      "width": 1080,
+      "height": 811
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/11.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/11.jpg.webp",
+      "originalBytes": 153756,
+      "optimizedBytes": 179014,
+      "width": 1080,
+      "height": 811
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/2.JPG",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/2.JPG.webp",
+      "originalBytes": 10022415,
+      "optimizedBytes": 611676,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/22.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/22.jpg.webp",
+      "originalBytes": 10281373,
+      "optimizedBytes": 528246,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/3.JPG",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/3.JPG.webp",
+      "originalBytes": 6818652,
+      "optimizedBytes": 388116,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/33.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/33.jpg.webp",
+      "originalBytes": 7401845,
+      "optimizedBytes": 359024,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/4.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/4.jpg.webp",
+      "originalBytes": 152338,
+      "optimizedBytes": 168698,
+      "width": 1080,
+      "height": 811
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/5.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/5.jpg.webp",
+      "originalBytes": 160296,
+      "optimizedBytes": 180226,
+      "width": 1080,
+      "height": 811
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Day To Dusk/6.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Day To Dusk/6.jpg.webp",
+      "originalBytes": 178649,
+      "optimizedBytes": 211162,
+      "width": 1080,
+      "height": 810
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/DSC00287.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/DSC00287.jpg.webp",
+      "originalBytes": 6739414,
+      "optimizedBytes": 439320,
+      "width": 2048,
+      "height": 1368
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5121.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5121.jpg.webp",
+      "originalBytes": 4904762,
+      "optimizedBytes": 152604,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5129.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5129.jpg.webp",
+      "originalBytes": 4841324,
+      "optimizedBytes": 82472,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5164.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5164.jpg.webp",
+      "originalBytes": 4182353,
+      "optimizedBytes": 53744,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5192.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5192.jpg.webp",
+      "originalBytes": 4189231,
+      "optimizedBytes": 126454,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5197.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5197.jpg.webp",
+      "originalBytes": 3804530,
+      "optimizedBytes": 132020,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5217.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5217.jpg.webp",
+      "originalBytes": 2983416,
+      "optimizedBytes": 159880,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5230.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5230.jpg.webp",
+      "originalBytes": 4096634,
+      "optimizedBytes": 88804,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5252.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5252.jpg.webp",
+      "originalBytes": 3894522,
+      "optimizedBytes": 118200,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5813.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5813.jpg.webp",
+      "originalBytes": 3545580,
+      "optimizedBytes": 187772,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/1/ET6A5819.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/1/ET6A5819.jpg.webp",
+      "originalBytes": 3490899,
+      "optimizedBytes": 180240,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05851.jpg.webp",
+      "originalBytes": 4289475,
+      "optimizedBytes": 155888,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05854.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05854.jpg.webp",
+      "originalBytes": 3932794,
+      "optimizedBytes": 186734,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05860.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05860.jpg.webp",
+      "originalBytes": 4797739,
+      "optimizedBytes": 220024,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05866.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05866.jpg.webp",
+      "originalBytes": 5242230,
+      "optimizedBytes": 241630,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05872.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05872.jpg.webp",
+      "originalBytes": 4317283,
+      "optimizedBytes": 417218,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05875.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05875.jpg.webp",
+      "originalBytes": 3338322,
+      "optimizedBytes": 296420,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05884.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05884.jpg.webp",
+      "originalBytes": 3247332,
+      "optimizedBytes": 308460,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05887.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05887.jpg.webp",
+      "originalBytes": 2634758,
+      "optimizedBytes": 211838,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05890.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05890.jpg.webp",
+      "originalBytes": 6032266,
+      "optimizedBytes": 332118,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05895.jpg.webp",
+      "originalBytes": 3904868,
+      "optimizedBytes": 355854,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05901.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05901.jpg.webp",
+      "originalBytes": 3857735,
+      "optimizedBytes": 345190,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05904.jpg.webp",
+      "originalBytes": 3805037,
+      "optimizedBytes": 338930,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05908.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05908.jpg.webp",
+      "originalBytes": 4506430,
+      "optimizedBytes": 306430,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05911.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05911.jpg.webp",
+      "originalBytes": 5219508,
+      "optimizedBytes": 472468,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05914.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05914.jpg.webp",
+      "originalBytes": 4474729,
+      "optimizedBytes": 292362,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05917.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05917.jpg.webp",
+      "originalBytes": 4681734,
+      "optimizedBytes": 263592,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05920.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05920.jpg.webp",
+      "originalBytes": 3496417,
+      "optimizedBytes": 123582,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05923.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05923.jpg.webp",
+      "originalBytes": 4664114,
+      "optimizedBytes": 188120,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05926.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05926.jpg.webp",
+      "originalBytes": 4592949,
+      "optimizedBytes": 121712,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05929.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05929.jpg.webp",
+      "originalBytes": 3495653,
+      "optimizedBytes": 216714,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05935.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05935.jpg.webp",
+      "originalBytes": 4632277,
+      "optimizedBytes": 126474,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05941.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05941.jpg.webp",
+      "originalBytes": 5597437,
+      "optimizedBytes": 384768,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05944.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05944.jpg.webp",
+      "originalBytes": 3276728,
+      "optimizedBytes": 101694,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05947.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05947.jpg.webp",
+      "originalBytes": 4310733,
+      "optimizedBytes": 283338,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05952.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05952.jpg.webp",
+      "originalBytes": 4222480,
+      "optimizedBytes": 203076,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05955.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05955.jpg.webp",
+      "originalBytes": 2892012,
+      "optimizedBytes": 268882,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05958.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05958.jpg.webp",
+      "originalBytes": 3509076,
+      "optimizedBytes": 349754,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05961.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05961.jpg.webp",
+      "originalBytes": 5206067,
+      "optimizedBytes": 601928,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05964.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05964.jpg.webp",
+      "originalBytes": 4570576,
+      "optimizedBytes": 509084,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05967.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05967.jpg.webp",
+      "originalBytes": 4323817,
+      "optimizedBytes": 728084,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05970.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05970.jpg.webp",
+      "originalBytes": 4371535,
+      "optimizedBytes": 215828,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05973.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05973.jpg.webp",
+      "originalBytes": 4482873,
+      "optimizedBytes": 680690,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC05976.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC05976.jpg.webp",
+      "originalBytes": 4526514,
+      "optimizedBytes": 770734,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06007.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06007.jpg.webp",
+      "originalBytes": 3779746,
+      "optimizedBytes": 361660,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06016.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06016.jpg.webp",
+      "originalBytes": 4696708,
+      "optimizedBytes": 246310,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06019.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06019.jpg.webp",
+      "originalBytes": 5810254,
+      "optimizedBytes": 189786,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06021.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06021.jpg.webp",
+      "originalBytes": 5813148,
+      "optimizedBytes": 145804,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06025.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06025.jpg.webp",
+      "originalBytes": 5595112,
+      "optimizedBytes": 121470,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06028.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06028.jpg.webp",
+      "originalBytes": 4237415,
+      "optimizedBytes": 107836,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06031.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06031.jpg.webp",
+      "originalBytes": 3768090,
+      "optimizedBytes": 107930,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06034.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06034.jpg.webp",
+      "originalBytes": 3392713,
+      "optimizedBytes": 193236,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06037.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06037.jpg.webp",
+      "originalBytes": 4533847,
+      "optimizedBytes": 124558,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06040.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06040.jpg.webp",
+      "originalBytes": 2961345,
+      "optimizedBytes": 111234,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06043.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06043.jpg.webp",
+      "originalBytes": 6483655,
+      "optimizedBytes": 325086,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06046.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06046.jpg.webp",
+      "originalBytes": 4918008,
+      "optimizedBytes": 185550,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06049.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06049.jpg.webp",
+      "originalBytes": 4024338,
+      "optimizedBytes": 204446,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06052.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06052.jpg.webp",
+      "originalBytes": 5542966,
+      "optimizedBytes": 247406,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06055.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06055.jpg.webp",
+      "originalBytes": 5259421,
+      "optimizedBytes": 317620,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06058.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06058.jpg.webp",
+      "originalBytes": 5804906,
+      "optimizedBytes": 302596,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06061.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06061.jpg.webp",
+      "originalBytes": 5702097,
+      "optimizedBytes": 270748,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06064.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06064.jpg.webp",
+      "originalBytes": 2975109,
+      "optimizedBytes": 240126,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06067.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06067.jpg.webp",
+      "originalBytes": 3452875,
+      "optimizedBytes": 333920,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06070.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06070.jpg.webp",
+      "originalBytes": 4749259,
+      "optimizedBytes": 206916,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06073.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06073.jpg.webp",
+      "originalBytes": 5344005,
+      "optimizedBytes": 206582,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06076.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06076.jpg.webp",
+      "originalBytes": 5631772,
+      "optimizedBytes": 339668,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06079.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06079.jpg.webp",
+      "originalBytes": 5173014,
+      "optimizedBytes": 309004,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06084.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06084.jpg.webp",
+      "originalBytes": 3630056,
+      "optimizedBytes": 312906,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06087.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06087.jpg.webp",
+      "originalBytes": 4672041,
+      "optimizedBytes": 758166,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06090.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06090.jpg.webp",
+      "originalBytes": 6413121,
+      "optimizedBytes": 727458,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06093.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06093.jpg.webp",
+      "originalBytes": 6523662,
+      "optimizedBytes": 769842,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/HDR Blending/2/DSC06097.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/HDR Blending/2/DSC06097.jpg.webp",
+      "originalBytes": 3452197,
+      "optimizedBytes": 254338,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/1.jpg.webp",
+      "originalBytes": 1154994,
+      "optimizedBytes": 267142,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/1.png",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/1.png.webp",
+      "originalBytes": 331130,
+      "optimizedBytes": 45660,
+      "width": 600,
+      "height": 391
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/10.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/10.jpg.webp",
+      "originalBytes": 1188852,
+      "optimizedBytes": 322690,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/11.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/11.jpg.webp",
+      "originalBytes": 1357046,
+      "optimizedBytes": 385806,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/12.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/12.jpg.webp",
+      "originalBytes": 1033556,
+      "optimizedBytes": 190640,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/13.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/13.jpg.webp",
+      "originalBytes": 935053,
+      "optimizedBytes": 223866,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/14.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/14.jpg.webp",
+      "originalBytes": 1756042,
+      "optimizedBytes": 348602,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/15.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/15.jpg.webp",
+      "originalBytes": 1162749,
+      "optimizedBytes": 330146,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/16.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/16.jpg.webp",
+      "originalBytes": 934640,
+      "optimizedBytes": 205790,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/17.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/17.jpg.webp",
+      "originalBytes": 837880,
+      "optimizedBytes": 138564,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/18.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/18.jpg.webp",
+      "originalBytes": 1604418,
+      "optimizedBytes": 528798,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/2.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/2.jpg.webp",
+      "originalBytes": 1175994,
+      "optimizedBytes": 273174,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/3.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/3.jpg.webp",
+      "originalBytes": 1485071,
+      "optimizedBytes": 469660,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/4.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/4.jpg.webp",
+      "originalBytes": 780467,
+      "optimizedBytes": 104704,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/5.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/5.jpg.webp",
+      "originalBytes": 863525,
+      "optimizedBytes": 143102,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/6.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/6.jpg.webp",
+      "originalBytes": 810274,
+      "optimizedBytes": 132242,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/6.png",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/6.png.webp",
+      "originalBytes": 251155,
+      "optimizedBytes": 31286,
+      "width": 600,
+      "height": 398
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/7.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/7.jpg.webp",
+      "originalBytes": 933762,
+      "optimizedBytes": 137394,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/8.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/8.jpg.webp",
+      "originalBytes": 1529204,
+      "optimizedBytes": 320078,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/8.png",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/8.png.webp",
+      "originalBytes": 358753,
+      "optimizedBytes": 46734,
+      "width": 600,
+      "height": 396
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Item Removal/9.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Item Removal/9.jpg.webp",
+      "originalBytes": 769844,
+      "optimizedBytes": 115104,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/01122303.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/01122303.jpg.webp",
+      "originalBytes": 791089,
+      "optimizedBytes": 224916,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/01122303_.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/01122303_.jpg.webp",
+      "originalBytes": 7568559,
+      "optimizedBytes": 101966,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/01122310.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/01122310.jpg.webp",
+      "originalBytes": 833197,
+      "optimizedBytes": 297320,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/01122310_.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/01122310_.jpg.webp",
+      "originalBytes": 7304176,
+      "optimizedBytes": 101764,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/01122323_Room2.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/01122323_Room2.jpg.webp",
+      "originalBytes": 4715449,
+      "optimizedBytes": 276158,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/01122323_Room2_.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/01122323_Room2_.jpg.webp",
+      "originalBytes": 8188354,
+      "optimizedBytes": 239282,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/1-1bf.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/1-1bf.jpg.webp",
+      "originalBytes": 4884427,
+      "optimizedBytes": 373180,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/1-2bf.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/1-2bf.jpg.webp",
+      "originalBytes": 2131168,
+      "optimizedBytes": 431482,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/1-3bf.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/1-3bf.jpg.webp",
+      "originalBytes": 5302703,
+      "optimizedBytes": 280102,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/1-4bf.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/1-4bf.jpg.webp",
+      "originalBytes": 436663,
+      "optimizedBytes": 319616,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/1-6bf.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/1-6bf.jpg.webp",
+      "originalBytes": 3737873,
+      "optimizedBytes": 1109464,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/2.1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/2.1.jpg.webp",
+      "originalBytes": 6339351,
+      "optimizedBytes": 285024,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/2.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/2.jpg.webp",
+      "originalBytes": 8430680,
+      "optimizedBytes": 342122,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/37..jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/37..jpg.webp",
+      "originalBytes": 7741756,
+      "optimizedBytes": 851164,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/37.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/37.jpg.webp",
+      "originalBytes": 5725417,
+      "optimizedBytes": 592948,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/37_compressed.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/37_compressed.jpg.webp",
+      "originalBytes": 4047233,
+      "optimizedBytes": 591578,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/5 (kopie 2).jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/5 (kopie 2).jpg.webp",
+      "originalBytes": 1476460,
+      "optimizedBytes": 244740,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/5 (kopie).jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/5 (kopie).jpg.webp",
+      "originalBytes": 1165488,
+      "optimizedBytes": 117000,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/7 (kopie)..jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/7 (kopie)..jpg.webp",
+      "originalBytes": 1626318,
+      "optimizedBytes": 422998,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/7 (kopie).jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/7 (kopie).jpg.webp",
+      "originalBytes": 1339573,
+      "optimizedBytes": 266390,
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/b1-1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/b1-1.jpg.webp",
+      "originalBytes": 7566769,
+      "optimizedBytes": 203878,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/b1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/b1.jpg.webp",
+      "originalBytes": 5545017,
+      "optimizedBytes": 185128,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/bath1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/bath1.jpg.webp",
+      "originalBytes": 3694860,
+      "optimizedBytes": 431004,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/bath2.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/bath2.jpg.webp",
+      "originalBytes": 3915717,
+      "optimizedBytes": 119504,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC02106-Edit copy.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC02106-Edit copy.jpg.webp",
+      "originalBytes": 385316,
+      "optimizedBytes": 241112,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC02106-Edit copy_1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC02106-Edit copy_1.jpg.webp",
+      "originalBytes": 3088039,
+      "optimizedBytes": 249476,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC09914.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC09914.jpg.webp",
+      "originalBytes": 5240189,
+      "optimizedBytes": 132892,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC09914_1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC09914_1.jpg.webp",
+      "originalBytes": 1493802,
+      "optimizedBytes": 167344,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC09920.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC09920.jpg.webp",
+      "originalBytes": 4667534,
+      "optimizedBytes": 102220,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC09920_1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC09920_1.jpg.webp",
+      "originalBytes": 1456598,
+      "optimizedBytes": 175092,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC09921.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC09921.jpg.webp",
+      "originalBytes": 4706078,
+      "optimizedBytes": 119414,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/DSC09921_1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/DSC09921_1.jpg.webp",
+      "originalBytes": 1450349,
+      "optimizedBytes": 152888,
+      "width": 2048,
+      "height": 1366
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/str.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/str.jpg.webp",
+      "originalBytes": 4650119,
+      "optimizedBytes": 338100,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Renovation/str1.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Renovation/str1.jpg.webp",
+      "originalBytes": 3477459,
+      "optimizedBytes": 311586,
+      "width": 2048,
+      "height": 1536
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/10after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/10after.jpg.webp",
+      "originalBytes": 10324613,
+      "optimizedBytes": 202994,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/11after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/11after.jpg.webp",
+      "originalBytes": 9856711,
+      "optimizedBytes": 262216,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/11before.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/11before.jpg.webp",
+      "originalBytes": 9958189,
+      "optimizedBytes": 195208,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/12after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/12after.jpg.webp",
+      "originalBytes": 2349360,
+      "optimizedBytes": 267590,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/13after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/13after.jpg.webp",
+      "originalBytes": 4935071,
+      "optimizedBytes": 624278,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/14after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/14after.jpg.webp",
+      "originalBytes": 4189200,
+      "optimizedBytes": 400450,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/1after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/1after.jpg.webp",
+      "originalBytes": 4560779,
+      "optimizedBytes": 409668,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/1before.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/1before.jpg.webp",
+      "originalBytes": 4557494,
+      "optimizedBytes": 364828,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/2after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/2after.jpg.webp",
+      "originalBytes": 3971850,
+      "optimizedBytes": 348378,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/2before.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/2before.jpg.webp",
+      "originalBytes": 3216254,
+      "optimizedBytes": 194240,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/3after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/3after.jpg.webp",
+      "originalBytes": 4233617,
+      "optimizedBytes": 380462,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/3before.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/3before.jpg.webp",
+      "originalBytes": 4229036,
+      "optimizedBytes": 321388,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/4after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/4after.jpg.webp",
+      "originalBytes": 5336714,
+      "optimizedBytes": 591388,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/4before.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/4before.jpg.webp",
+      "originalBytes": 5406722,
+      "optimizedBytes": 611530,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/5after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/5after.jpg.webp",
+      "originalBytes": 3811354,
+      "optimizedBytes": 392372,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/6after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/6after.jpg.webp",
+      "originalBytes": 2403595,
+      "optimizedBytes": 236048,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/7after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/7after.jpg.webp",
+      "originalBytes": 3543544,
+      "optimizedBytes": 313642,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/8after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/8after.jpg.webp",
+      "originalBytes": 4916187,
+      "optimizedBytes": 426852,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/8before.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/8before.jpg.webp",
+      "originalBytes": 4575611,
+      "optimizedBytes": 327634,
+      "width": 2048,
+      "height": 1365
+    },
+    {
+      "source": "/images/Sample Lotus Foto/Virtual Staging/9after.jpg",
+      "optimized": "/optimized/Sample Lotus Foto/Virtual Staging/9after.jpg.webp",
+      "originalBytes": 10051437,
+      "optimizedBytes": 249354,
+      "width": 2048,
+      "height": 1365
+    }
+  ]
+}
