@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import { DEFAULT_SEO, PAGE_DEFINITIONS } from './config/pages.js';
 import { LegacyPageLoader } from './services/LegacyPageLoader.js';
+import { LegacyFragmentRepository } from './services/LegacyFragmentRepository.js';
+import { LegacyPageComposer } from './services/LegacyPageComposer.js';
 import { LegacyScriptRunner } from './services/LegacyScriptRunner.js';
 import { ImageUrlResolver } from './services/ImageUrlResolver.js';
 import { PageRegistry } from './services/PageRegistry.js';
@@ -10,7 +12,9 @@ import './legacy.css';
 
 const pageRegistry = new PageRegistry(PAGE_DEFINITIONS, DEFAULT_SEO);
 const imageUrlResolver = new ImageUrlResolver();
-const pageLoader = new LegacyPageLoader({ imageUrlResolver });
+const fragmentRepository = new LegacyFragmentRepository();
+const pageComposer = new LegacyPageComposer({ fragmentRepository });
+const pageLoader = new LegacyPageLoader({ imageUrlResolver, pageComposer });
 const scriptRunner = new LegacyScriptRunner({
   skippedScriptPatterns: ['react@', 'react-dom@', 'bootstrap.bundle'],
   imageUrlResolver,

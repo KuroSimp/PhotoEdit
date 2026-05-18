@@ -389,41 +389,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-section">
-                <img src="/images/logo.png" alt="Lotus Foto Logo" class="logo-image" decoding="async">
-            </div>
-            <div class="header-right-section">
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                
-                <!-- Navigation Menu -->
-                <nav class="navigation" id="navigation">
-                    <ul class="nav-menu">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li class="dropdown">
-                            <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="photo-editing.html">Photo Editing</a></li>
-                                <li><a class="dropdown-item" href="day-to-dusk.html">Day to Dusk</a></li>
-                                <li><a class="dropdown-item" href="item-removal.html">Item Removal</a></li>
-                                <li><a class="dropdown-item" href="virtual-staging.html">Virtual Staging</a></li>
-                                <li><a class="dropdown-item" href="virtual-renovation.html">Virtual Renovation</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#footer">Contact us</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- Buy Now Button -->
-                <a href="order.html" class="buy-now-btn">Order Now</a>
-            </div>
-        </div>
-    </header>
+    <div data-legacy-fragment="header"></div>
 
     <!-- Main Content -->
     <main class="main-content">
@@ -538,116 +504,10 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-column footer-links">
-                    <h3 class="footer-title">USEFUL LINKS</h3>
-                    <ul class="footer-list">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#blog">Blog</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-services">
-                    <h3 class="footer-title">SERVICES</h3>
-                    <ul class="footer-list with-icons">
-                        <li><i class="fas fa-check"></i><span>Photo editing</span></li>
-                        <li><i class="fas fa-check"></i><span>Day to Dusk</span></li>
-                        <li><i class="fas fa-check"></i><span>Item Removal</span></li>
-                        <li><i class="fas fa-check"></i><span>Virtual Staging & Renovations</span></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-contact">
-                    <h3 class="footer-title">CONTACT</h3>
-                    <ul class="footer-list with-icons">
-                        <li><i class="fas fa-building"></i><span>Lotus Foto - Real Estate Photo Editing</span></li>
-                        <li><i class="fas fa-location-dot"></i><span>Chúc sơn - Chương Mỹ - Hà Nội, Vietnam</span></li>
-                        <li><i class="fas fa-envelope"></i><span>lotus.foto.sale@gmail.com</span></li>
-                        <li><i class="fas fa-envelope"></i><span>contact.lotusfoto@gmail.com</span></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-social">
-                    <h3 class="footer-title">SOCIAL</h3>
-                    <div class="social-media-section">
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/profile.php?id=61579599152434&locale=vi_VN" target="_blank" aria-label="Facebook" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/lotus_foto_editing/" target="_blank" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div data-legacy-fragment="footer"></div>
 
     <!-- Order Modal -->
-    <div id="orderModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Create Order</h2>
-                <span class="close">&times;</span>
-            </div>
-            <form class="order-form" id="orderForm">
-                <div class="form-group">
-                    <label for="customerName">Full Name *</label>
-                    <input type="text" id="customerName" name="customerName" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="customerEmail">Email *</label>
-                    <input type="email" id="customerEmail" name="customerEmail" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="customerPhone">Phone Number *</label>
-                    <input type="tel" id="customerPhone" name="customerPhone" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="serviceType">Service Type *</label>
-                    <select id="serviceType" name="serviceType" required>
-                        <option value="">Select a service</option>
-                        <option value="Photo Editing">Photo Editing</option>
-                        <option value="Day to Dusk">Day to Dusk</option>
-                        <option value="Item Removal">Item Removal</option>
-                        <option value="Virtual Staging">Virtual Staging</option>
-                        <option value="Virtual Renovation">Virtual Renovation</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="imageCount">Number of Images *</label>
-                    <input type="number" id="imageCount" name="imageCount" min="1" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="deliveryTime">Delivery Time *</label>
-                    <select id="deliveryTime" name="deliveryTime" required>
-                        <option value="">Select delivery time</option>
-                        <option value="24 hours">24 hours</option>
-                        <option value="48 hours">48 hours</option>
-                        <option value="3-5 days">3-5 days</option>
-                        <option value="1 week">1 week</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="specialInstructions">Special Instructions</label>
-                    <textarea id="specialInstructions" name="specialInstructions" rows="4" placeholder="Please describe your specific requirements..."></textarea>
-                </div>
-                
-                <div class="checkbox-group">
-                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
-                    <label for="agreeTerms" class="checkbox-label">
-                        I agree to the terms and conditions and pricing
-                    </label>
-                </div>
-                
-                <button type="submit" class="submit-btn">Submit Order</button>
-            </form>
-        </div>
-    </div>
+    <div data-legacy-fragment="modal" data-variant="services"></div>
 
     <!-- EmailJS CDN -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>

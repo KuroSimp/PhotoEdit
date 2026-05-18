@@ -1,0 +1,62 @@
+<div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Form</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="name">Your name*</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="orderName">Order name</label>
+                    <input type="text" id="orderName" name="orderName">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fileCount">Number of files</label>
+                    <input type="number" id="fileCount" name="fileCount" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label>Services</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Photo Editing">
+                            <span>Photo Editing</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Day to Dusk">
+                            <span>Day to Dusk</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Item Removal">
+                            <span>Item Removal</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Floor Plan">
+                            <span>Floor Plan</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="Virtual Staging & Renovation">
+                            <span>Virtual Staging & Renovation</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Please provide your photo links and any specific requirements..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </div>
+    </div>

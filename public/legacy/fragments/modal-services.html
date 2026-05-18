@@ -1,0 +1,66 @@
+<div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Order</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name *</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerEmail">Email *</label>
+                    <input type="email" id="customerEmail" name="customerEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number *</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="serviceType">Service Type *</label>
+                    <select id="serviceType" name="serviceType" required>
+                        <option value="">Select a service</option>
+                        <option value="Photo Editing">Photo Editing</option>
+                        <option value="Day to Dusk">Day to Dusk</option>
+                        <option value="Item Removal">Item Removal</option>
+                        <option value="Virtual Staging">Virtual Staging</option>
+                        <option value="Virtual Renovation">Virtual Renovation</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="imageCount">Number of Images *</label>
+                    <input type="number" id="imageCount" name="imageCount" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="deliveryTime">Delivery Time *</label>
+                    <select id="deliveryTime" name="deliveryTime" required>
+                        <option value="">Select delivery time</option>
+                        <option value="24 hours">24 hours</option>
+                        <option value="48 hours">48 hours</option>
+                        <option value="3-5 days">3-5 days</option>
+                        <option value="1 week">1 week</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialInstructions">Special Instructions</label>
+                    <textarea id="specialInstructions" name="specialInstructions" rows="4" placeholder="Please describe your specific requirements..."></textarea>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                    <label for="agreeTerms" class="checkbox-label">
+                        I agree to the terms and conditions and pricing
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+        </div>
+    </div>

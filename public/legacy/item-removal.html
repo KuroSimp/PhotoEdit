@@ -486,41 +486,7 @@
 </head>
 <body>
     <!-- Header (copied structure from index) -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo-section">
-                <img src="/images/logo.png" alt="Lotus Foto Logo" class="logo-image" decoding="async">
-            </div>
-            <div class="header-right-section">
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                
-                <!-- Navigation Menu -->
-                <nav class="navigation" id="navigation">
-                    <ul class="nav-menu">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li class="dropdown">
-                            <a href="services.html" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="photo-editing.html">Photo Editing</a></li>
-                                <li><a class="dropdown-item" href="day-to-dusk.html">Day to Dusk</a></li>
-                                <li><a class="dropdown-item" href="item-removal.html">Item Removal</a></li>
-                                <li><a class="dropdown-item" href="virtual-staging.html">Virtual Staging</a></li>
-                                <li><a class="dropdown-item" href="virtual-renovation.html">Virtual Renovation</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#footer">Contact us</a></li>
-                    </ul>
-                </nav>
-                
-                <!-- Buy Now Button -->
-                <a href="order.html" class="buy-now-btn">Order Now</a>
-            </div>
-        </div>
-    </header>
+    <div data-legacy-fragment="header"></div>
 
     <!-- Item Removal PAGE CONTENT -->
     <div id="item-removal-page" class="site-page">
@@ -642,134 +608,10 @@
     </div>
 
     <!-- Footer (reuse same markup from index) -->
-    <footer id="footer" class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-column footer-links">
-                    <h3 class="footer-title">USEFUL LINKS</h3>
-                    <ul class="footer-list">
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#blog">Blog</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-services">
-                    <h3 class="footer-title">SERVICES</h3>
-                    <ul class="footer-list with-icons">
-                        <li><i class="fas fa-check"></i><span>Photo editing</span></li>
-                        <li><i class="fas fa-check"></i><span>Day to Dusk</span></li>
-                        <li><i class="fas fa-check"></i><span>Item Removal</span></li>
-                        <li><i class="fas fa-check"></i><span>Virtual Staging & Renovations</span></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-contact">
-                    <h3 class="footer-title">CONTACT</h3>
-                    <ul class="footer-list with-icons">
-                        <li><i class="fas fa-building"></i><span>Lotus Foto - Real Estate Photo Editing</span></li>
-                        <li><i class="fas fa-location-dot"></i><span>Chúc sơn - Chương Mỹ - Hà Nội, Vietnam</span></li>
-                        <li><i class="fas fa-envelope"></i><span>lotus.foto.sale@gmail.com</span></li>
-                        <li><i class="fas fa-envelope"></i><span>contact.lotusfoto@gmail.com</span></li>
-                    </ul>
-                </div>
-                <div class="footer-column footer-social">
-                    <h3 class="footer-title">SOCIAL</h3>
-                    <div class="social-media-section">
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/profile.php?id=61579599152434&locale=vi_VN" target="_blank" aria-label="Facebook" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/lotus_foto_editing/" target="_blank" aria-label="Instagram" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div data-legacy-fragment="footer"></div>
 
     <!-- Order Form Modal -->
-    <div id="orderModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Order Form</h2>
-                <span class="close">&times;</span>
-            </div>
-            <form class="order-form" id="orderForm">
-                <div class="form-group">
-                    <label for="name">Your name*</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Your email*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="orderName">Order name</label>
-                    <input type="text" id="orderName" name="orderName">
-                </div>
-                
-                <div class="form-group">
-                    <label for="fileCount">Number of files</label>
-                    <input type="number" id="fileCount" name="fileCount" min="1">
-                </div>
-                
-                <div class="form-group">
-                    <label>Services</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="services" value="Photo Editing">
-                            <span>Photo Editing</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="services" value="Day to Dusk">
-                            <span>Day to Dusk</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="services" value="Item Removal">
-                            <span>Item Removal</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="services" value="Floor Plan">
-                            <span>Floor Plan</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="services" value="Virtual Staging & Renovation">
-                            <span>Virtual Staging & Renovation</span>
-                        </label>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Please provide your photo links and any specific requirements..."></textarea>
-                </div>
-                
-                <button type="submit" class="submit-btn">Submit Order</button>
-            </form>
-        </div>
-    </div>
-
-    <script>
-        // Order buttons functionality
-        function initOrderButtons() {
-            const orderButtons = document.querySelectorAll('.cta-button, .create-order-btn, .pricing-btn');
-            
-            orderButtons.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    console.log('Order button clicked');
-                    
-                    // Redirect to order page
-                    window.location.href = 'order.html';
-                });
-            });
-        }
-
-        // Initialize order buttons when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            initOrderButtons();
-        });
-    </script>
-    <script src="/legacy/js/main.js"></script>
+    <div data-legacy-fragment="modal"></div>
+<script src="/legacy/js/main.js"></script>
 </body>
 </html>
